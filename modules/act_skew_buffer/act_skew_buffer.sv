@@ -16,12 +16,13 @@ module act_skew_buffer #(
     genvar row; 
     generate 
         for (row = 1; row <N; row ++) begin: SKEW_ROWS 
-            always_ff(@posedge clk or negedge rst_n) begin 
+            always_ff @(posedge clk or negedge rst_n) begin 
                 if (!rst_n) begin 
                     for (int i =0; i<row; i++) begin 
-                        shift_reg[row][i] <= '0'; 
+                        shift_reg[row][i] <= '0; 
                     end 
-
+                 end else if (en) begin 
+                    shift_reg[row][0] <= act_in[row];
                     for (int i = 1; i<row; i++) begin 
                         shift_reg[row][i] <= shift_reg[row][i-1]; 
                     end 
