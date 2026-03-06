@@ -1,4 +1,3 @@
-// systolic_array_16x16.sv
 module systolic_array #(
     parameter int N          = 16,
     parameter int ACT_WIDTH  = 16,
@@ -9,28 +8,18 @@ module systolic_array #(
     input  logic rst_n,
     input  logic en,
     
-    // --------------------- INPUTS -------------------------------------------------
-    // Left-edge activations: one per row
+    // --------------------- ACTIVATIONs / PSUMs  -------------------------------------
+    // One activation per row enters from the left edge
     input  logic signed [ACT_WIDTH-1:0]  act_in   [N],
-
-    // Top-edge partial sums: one per column (often all zeros)
     input  logic signed [PSUM_WIDTH-1:0] psum_in  [N],
-
-    // Bottom-edge outputs: one per column
     output logic signed [PSUM_WIDTH-1:0] psum_out [N],
-    // ------------------------------------------------------------------------------
-    
-    // -------------------- WEIGHT CONTROL INTERFACE --------------------------------
-    input  logic                          weight_load,  // 1: to start weight loading
-    
-    // used to indicate which row/col is now being loaded (controlled externally)
-    input  logic [$clog2(N)-1:0]          weight_row,    
-    input  logic [$clog2(N)-1:0]          weight_col,   
-    
-    input  logic signed [WT_WIDTH-1:0]    weight_data
-    // -------------------------------------------------------------------------------
-);
 
+    // --------------------- WEIGHT LOAD INTERFACE -------------------------------------
+    // External logic decides which PE gets loaded each cycle.
+    // weight_load_en[row][col] = 1 means PE[row][col] latches weight_load_data[row][col]
+    input  logic                          weight_load_en   [N][N],
+    input  logic signed [WT_WIDTH-1:0]    weight_load_data [N][N]
+);
 
     // --------------------- INTERCONNECTS -------------------------------------------
     // Internal interconnect:
@@ -55,44 +44,37 @@ module systolic_array #(
             assign psum_pipe[x][0] = psum_in[x];
         end
     endgenerate
-    // -------------------------------------------------------------------------------
     
-    // -------------------- SYSTOLIC ARRAY -------------------------------------------
+    // --------------------- SYSTOLIC ----------------------------------------
     generate
         for (x = 0; x < N; x++) begin : COLS
             for (y = 0; y < N; y++) begin : ROWS
-                logic this_load;
-
-                // Logic for determining which weight is now being loaded.
-                assign this_load = weight_load
-                                && (weight_row == y[$clog2(N)-1:0]) 
-                                && (weight_col == x[$clog2(N)-1:0]);
-
                 pe #(
-                    .ACT_WIDTH(ACT_WIDTH),
-                    .WT_WIDTH(WT_WIDTH),
+                    .ACT_WIDTH (ACT_WIDTH),
+                    .WT_WIDTH  (WT_WIDTH),
                     .PSUM_WIDTH(PSUM_WIDTH)
                 ) pe_inst (
                     .clk        (clk),
                     .rst_n      (rst_n),
                     .en         (en),
-                    .load_weight(this_load),
+                    .load_weight(weight_load_en[y][x]),
 
                     .act_in     (act_pipe[x][y]),
-                    .weight_in  (weight_data),          // broadcast, only selected PE latches
+                    .weight_in  (weight_load_data[y][x]),
                     .psum_in    (psum_pipe[x][y]),
 
-                    .act_out    (act_pipe[x+1][y]),     // to the right
-                    .psum_out   (psum_pipe[x][y+1])     // downward
+                    .act_out    (act_pipe[x+1][y]),   // move right
+                    .psum_out   (psum_pipe[x][y+1])   // move down
                 );
             end
         end
     endgenerate
 
-    // Bottom boundary (y=N): collect outputs per column
+    // --------------------- BOTTOM EDGE -------------------------------------
     generate
         for (x = 0; x < N; x++) begin : BOTTOM_EDGE
             assign psum_out[x] = psum_pipe[x][N];
         end
     endgenerate
+
 endmodule

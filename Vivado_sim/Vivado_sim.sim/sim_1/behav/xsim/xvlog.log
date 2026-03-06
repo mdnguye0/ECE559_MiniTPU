@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/pe/pe.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/pe/pe_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/Vivado_sim/Vivado_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

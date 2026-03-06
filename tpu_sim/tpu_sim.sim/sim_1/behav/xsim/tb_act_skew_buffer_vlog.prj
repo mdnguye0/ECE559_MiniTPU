@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  --include "../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef" \
+sv xil_defaultlib  --include "../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
 "../../../../../modules/act_skew_buffer/act_skew_buffer.sv" \
 "../../../../../modules/act_skew_buffer/act_skew_buffer_tb.sv" \
 

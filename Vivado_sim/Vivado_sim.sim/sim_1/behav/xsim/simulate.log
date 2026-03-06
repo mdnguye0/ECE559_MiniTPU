@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+act_out = 12 (exp 12)
+psum_out = -67 (exp -67)
+act_out = 3 (exp 3)
+psum_out = 1 (exp 1)
+act_out (frozen) = 3 (exp 3)
+psum_out (frozen) = 1 (exp 1)
+act_out (still frozen by load_weight) = 3 (exp 3)
+psum_out (still frozen by load_weight) = 1 (exp 1)
+act_out = 7 (exp 7)
+psum_out = 38 (exp 38)
+Test finished!
+$finish called at time : 160 ns : File "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/pe/pe_tb.sv" Line 112
