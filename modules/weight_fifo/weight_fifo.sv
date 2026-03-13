@@ -1,7 +1,7 @@
 module weight_fifo #(
-    parameter int DATA_WIDTH = 256;
-    parameter int DEPTH = 16;
-    parameter int ADDR_WIDTH = $clog2(DEPTH);
+    parameter int DATA_WIDTH = 256,
+    parameter int DEPTH = 16,
+    parameter int ADDR_WIDTH = $clog2(DEPTH)
 )(
     input logic clk, 
     input logic rst_n, 
