@@ -1,17 +1,9 @@
 Vivado Simulator v2025.1.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_act_skew_buffer_behav xil_defaultlib.tb_act_skew_buffer xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Vitis/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_weight_path_behav xil_defaultlib.tb_weight_path xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/act_skew_buffer/act_skew_buffer.sv" Line 1. Module act_skew_buffer_default doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/act_skew_buffer/act_skew_buffer.sv" Line 1. Module act_skew_buffer_default doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.act_skew_buffer_default
-Compiling module xil_defaultlib.tb_act_skew_buffer
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_act_skew_buffer_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

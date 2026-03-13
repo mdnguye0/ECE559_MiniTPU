@@ -8,7 +8,7 @@ module weight_controller #(parameter int N = 16,
     output logic load_done, 
 
     input logic fifo_empty, 
-    input logic [WT_WIDT-1:0] fifo_data, 
+    input logic [WT_WIDTH-1:0] fifo_data, 
     output logic fifo_rd_en, 
 
     output logic weight_load, 
@@ -43,7 +43,7 @@ module weight_controller #(parameter int N = 16,
 
         case (current)
             IDLE: begin 
-                if(start_load) next_state = LOADING; 
+                if(start_load) next = LOADING; 
             end 
 
             LOADING: begin 
@@ -67,14 +67,14 @@ module weight_controller #(parameter int N = 16,
     always_ff @(posedge clk or negedge rst_n) begin 
         if(!rst_n) begin 
             data_pending <= 1'b0; 
-            coutn <= 8'd0; 
+            count <= 8'd0; 
         end else begin 
             data_pending <= fifo_rd_en; 
             if (data_pending) begin 
                 count <= count + 1'b1; 
             end 
 
-            if(state == IDLE) begin 
+            if(current == IDLE) begin 
                 count <= 8'd0; 
             end 
         end 
@@ -86,6 +86,6 @@ module weight_controller #(parameter int N = 16,
     assign weight_row = count[7:4]; 
     assign weight_col = count[3:0]; 
 
-    assign load_done = (state == DONE); 
+    assign load_done = (current == DONE); 
 
 endmodule

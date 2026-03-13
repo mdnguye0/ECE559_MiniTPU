@@ -1,5 +1,5 @@
 module weight_fifo #(
-    parameter int DATA_WIDTH = 256,
+    parameter int DATA_WIDTH = 16,
     parameter int DEPTH = 16,
     parameter int ADDR_WIDTH = $clog2(DEPTH)
 )(

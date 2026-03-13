@@ -2,6 +2,7 @@
 2020.2
 May 22 2025
 00:13:55
-C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/act_skew_buffer/act_skew_buffer.sv,1772823646,systemVerilog,,C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/act_skew_buffer/act_skew_buffer_tb.sv,,act_skew_buffer,,uvm,../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/modules/act_skew_buffer/act_skew_buffer_tb.sv,1772823646,systemVerilog,,,,tb_act_skew_buffer,,uvm,../../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
-C:/Users/trand/Downloads/JUNIOR_YEAR/2nd_sem/559/ECE559_MiniTPU/tpu_sim/tpu_sim.sim/sim_1/behav/xsim/glbl.v,1772823646,verilog,,,,glbl,,uvm,,,,,,
+D:/ECE 559/tpu_sim/tpu_sim.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+D:/ECE 559/tpu_sim/tpu_sim.srcs/sim_1/new/tb_weight_path.sv,1773370438,systemVerilog,,,,tb_weight_path,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_controller.sv,1773370390,systemVerilog,,D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_fifo.sv,,weight_controller,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_fifo.sv,1773370393,systemVerilog,,D:/ECE 559/tpu_sim/tpu_sim.srcs/sim_1/new/tb_weight_path.sv,,weight_fifo,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
