@@ -2,7 +2,15 @@
 2020.2
 May 22 2025
 00:13:55
+D:/ECE 559/modules/act_skew_buffer.sv,1772655198,systemVerilog,,D:/ECE 559/modules/act_sram.sv,,act_skew_buffer,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/act_sram.sv,1774503212,systemVerilog,,D:/ECE 559/modules/input_fifo.sv,,act_sram,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/input_fifo.sv,1772665867,systemVerilog,,D:/ECE 559/modules/pe.sv,,input_fifo,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/pe.sv,1773363721,systemVerilog,,D:/ECE 559/modules/systolic_array.sv,,pe,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/systolic_array.sv,1773363721,systemVerilog,,D:/ECE 559/modules/tpu_top.sv,,systolic_array,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/tb_tpu_top.sv,1774503793,systemVerilog,,,,tb_tpu_top,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/tpu_top.sv,1774503110,systemVerilog,,D:/ECE 559/modules/weight_controller.sv,,tpu_top,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/weight_controller.sv,1773370370,systemVerilog,,D:/ECE 559/modules/weight_fifo.sv,,weight_controller,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/weight_fifo.sv,1773368696,systemVerilog,,D:/ECE 559/modules/weight_sram.sv,,weight_fifo,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
+D:/ECE 559/modules/weight_sram.sv,1773364263,systemVerilog,,D:/ECE 559/modules/tb_tpu_top.sv,,weight_sram,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
 D:/ECE 559/tpu_sim/tpu_sim.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
 D:/ECE 559/tpu_sim/tpu_sim.srcs/sim_1/new/tb_weight_path.sv,1773370438,systemVerilog,,,,tb_weight_path,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
-D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_controller.sv,1773370390,systemVerilog,,D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_fifo.sv,,weight_controller,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,
-D:/ECE 559/tpu_sim/tpu_sim.srcs/sources_1/new/weight_fifo.sv,1773370393,systemVerilog,,D:/ECE 559/tpu_sim/tpu_sim.srcs/sim_1/new/tb_weight_path.sv,,weight_fifo,,uvm,../../../../../../Vitis/2025.1/Vivado/data/rsb/busdef,,,,,

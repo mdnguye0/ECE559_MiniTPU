@@ -173,7 +173,7 @@ module tpu_top #(
 
     genvar i; 
     generate 
-        for (int i = 0; i< N; i++) begin: UNPACK_ACT
+        for (i = 0; i< N; i++) begin: UNPACK_ACT
             assign act_skew_in[i] = act_fifo_rdata[(i*ACT_WIDTH) +: ACT_WIDTH];
         end
     endgenerate 

@@ -1,7 +1,7 @@
 module act_sram #(
     parameter int WORD_WIDTH = 256,
     parameter int DEPTH = 1024, 
-    parameter int ADDR_WIDTH = $clog2(DEPTH), 
+    parameter int ADDR_WIDTH = $clog2(DEPTH)
 )
 (
     input logic clk, 
@@ -18,13 +18,13 @@ module act_sram #(
 
     logic [WORD_WIDTH-1:0] ram[0:DEPTH-1]; 
     always_ff @(posedge clk) begin 
-        if (wen) begin 
+        if (w_en) begin 
             ram[waddr] <= wdata; 
         end 
     end 
 
     always_ff @(posedge clk) begin 
-        if (ren) begin 
+        if (r_en) begin 
             rdata <= ram[raddr]; 
         end 
     end 
