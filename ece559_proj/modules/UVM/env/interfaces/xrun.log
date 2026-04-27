@@ -1,0 +1,11 @@
+xrun(64): 25.09-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.09-s001: Started on Apr 17, 2026 at 00:17:48 EDT
+xrun
+	-uvm
+	-compile
+	tpu_if.sv
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/cadence/xcelium/install/tools/methodology/UVM/CDNS-1.1d
+file: tpu_if.sv
+	interface worklib.tpu_if:sv
+		errors: 0, warnings: 0
+TOOL:	xrun(64)	25.09-s001: Exiting on Apr 17, 2026 at 00:17:49 EDT  (total: 00:00:01)

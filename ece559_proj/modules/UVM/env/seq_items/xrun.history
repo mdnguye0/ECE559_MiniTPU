@@ -1,0 +1,8 @@
+#e1(17Apr2026:00:33:37): source ./xcelium.d/env.d/env.history.17Apr2026_00_33_37
+s1(17Apr2026:00:33:37):  xrun -uvm -compile weight_item.sv 
+#e2(17Apr2026:00:34:55): source ./xcelium.d/env.d/env.history.17Apr2026_00_34_55
+s2(17Apr2026:00:34:55):  xrun -uvm -compile weight_item.sv 
+#e3(17Apr2026:00:35:17): source ./xcelium.d/env.d/env.history.17Apr2026_00_35_17
+s3(17Apr2026:00:35:17):  xrun -uvm -compile weight_item.sv 
+#e4(17Apr2026:00:36:18): source ./xcelium.d/env.d/env.history.17Apr2026_00_36_18
+s4(17Apr2026:00:36:18):  xrun -clean -uvm -compile weight_item.sv 

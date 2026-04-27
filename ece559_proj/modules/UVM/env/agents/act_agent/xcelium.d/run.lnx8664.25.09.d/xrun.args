@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-uvm
+-compile
+../../seq_items/act_item.sv
+act_sequencer.sv
+act_driver.sv
+act_monitor.sv
+act_agent.sv

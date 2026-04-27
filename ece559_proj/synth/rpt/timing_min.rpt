@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : tpu_top
+Version: T-2022.03-SP4
+Date   : Sat Apr 25 01:39:08 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P1V_0C   Library: fast_vdd1v0
+Wire Load Model Mode: top
+
+  Startpoint: wt_sram_ren_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: wt_fifo_wr_en_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  wt_sram_ren_reg/CK (DFFRHQX1)          0.0000 #   0.0000 r
+  wt_sram_ren_reg/Q (DFFRHQX1)           0.0638     0.0638 f
+  wt_fifo_wr_en_reg/D (DFFRHQX1)         0.0000     0.0638 f
+  data arrival time                                 0.0638
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  clock uncertainty                      0.0500     0.0500
+  wt_fifo_wr_en_reg/CK (DFFRHQX1)        0.0000     0.0500 r
+  library hold time                     -0.0029     0.0471
+  data required time                                0.0471
+  -----------------------------------------------------------
+  data required time                                0.0471
+  data arrival time                                -0.0638
+  -----------------------------------------------------------
+  slack (MET)                                       0.0167
+
+
+1

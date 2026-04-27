@@ -1,0 +1,25 @@
+xrun(64): 25.09-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.09-s001: Started on Apr 20, 2026 at 14:35:21 EDT
+xrun
+	-clean
+	-uvm
+	-compile
+	../env/seq_items/weight_item.sv
+	../env/sequences/weight_sequence.sv
+	../env/agents/weight_agent/weight_sequencer.sv
+	../env/agents/weight_agent/weight_driver.sv
+	../env/agents/weight_agent/weight_monitor.sv
+	../env/agents/weight_agent/weight_agent.sv
+	../env/tpu_env.sv
+	tpu_test.sv
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /opt/cadence/xcelium/install/tools/methodology/UVM/CDNS-1.1d
+file: ../env/seq_items/weight_item.sv
+file: ../env/sequences/weight_sequence.sv
+file: ../env/agents/weight_agent/weight_sequencer.sv
+file: ../env/agents/weight_agent/weight_driver.sv
+file: ../env/agents/weight_agent/weight_monitor.sv
+file: ../env/agents/weight_agent/weight_agent.sv
+file: ../env/tpu_env.sv
+file: tpu_test.sv
+TOOL:	xrun(64)	25.09-s001: Exiting on Apr 20, 2026 at 14:35:22 EDT  (total: 00:00:01)

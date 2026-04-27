@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-uvm
+-compile
+../../seq_items/weight_item.sv
+weight_sequencer.sv
+weight_driver.sv
+weight_monitor.sv
+weight_agent.sv

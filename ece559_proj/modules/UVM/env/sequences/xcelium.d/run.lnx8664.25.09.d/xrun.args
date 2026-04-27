@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-uvm
+-compile
+../seq_items/act_item.sv
+act_sequence.sv

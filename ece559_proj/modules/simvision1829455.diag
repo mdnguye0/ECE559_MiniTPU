@@ -1,0 +1,124 @@
+*** Message Type: info ***
+When: Thu Apr 23 12:13:43 AM EDT 2026
+SimVision started.
+Version: TOOL:  simvision(64)   25.09-s001
+User: mdnguye0
+Host: vlsicad.ecs.umass.edu
+Platform: Linux/x86_64/4.18.0-553.16.1.el8_10.x86_64
+Started: Thu Apr 23 12:13:43 AM EDT 2026
+Command: /opt/cadence/xcelium/install/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:vlsicad.ecs.umass.edu:47599 -64BIT -nocopyright
+Work Directory: /home/ece558_658_2025/mdnguye0/ece559_proj/modules
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:13:53 AM EDT 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:14:58 AM EDT 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:15:36 AM EDT 2026
+Connect to Simulator
+      Design: worklib.tb_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       25.09-s001
+        User: mdnguye0
+        Host: vlsicad.ecs.umass.edu
+Time Started: Thu Apr 23 12:13:21 AM EDT 2026
+  Process ID: 1829323
+   Directory: /home/ece558_658_2025/mdnguye0/ece559_proj/modules
+     Command: xrun -clean -uvm -gui -access +rwc sources/tpu_top.sv sources/weight_sram.sv sources/weight_fifo.sv sources/weight_controller.sv sources/act_sram.sv sources/input_fifo.sv sources/act_skew_buffer.sv sources/systolic_array.sv sources/pe.sv UVM/env/interfaces/tpu_if.sv UVM/env/seq_items/weight_item.sv UVM/env/seq_items/act_item.sv UVM/env/sequences/weight_sequence.sv UVM/env/sequences/act_sequence.sv UVM/env/agents/weight_agent/weight_sequencer.sv UVM/env/agents/weight_agent/weight_driver.sv UVM/env/agents/weight_agent/weight_monitor.sv UVM/env/agents/weight_agent/weight_agent.sv UVM/env/agents/act_agent/act_sequencer.sv UVM/env/agents/act_agent/act_driver.sv UVM/env/agents/act_agent/act_monitor.sv UVM/env/agents/act_agent/act_agent.sv UVM/env/tpu_env.sv UVM/tests/tpu_test.sv tb_top.sv
+
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:15:38 AM EDT 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:16:05 AM EDT 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:30:24 AM EDT 2026
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Thu Apr 23 12:30:54 AM EDT 2026
+invalid command name ".waveWindow0.work.user.waveset.popup.slcolor.sltracecolor"
+    while executing
+"$_menu delete $_entry0 [expr {$_entry0+$size-1}]"
+    (object "::palettemenu4" method "::cwidgets::Palettemenu::fixMenu" body line 28)
+    invoked from within
+"::palettemenu4 fixMenu -now"
+    (in namespace inscope "::cwidgets::Palettemenu" script line 1)
+    invoked from within
+"namespace inscope ::cwidgets::Palettemenu {::palettemenu4 fixMenu -now}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Thu Apr 23 12:30:54 AM EDT 2026
+invalid command name ".waveWindow0.work.user.waveset.popup.slcolor.slbgcolor"
+    while executing
+"$_menu delete $_entry0 [expr {$_entry0+$size-1}]"
+    (object "::palettemenu5" method "::cwidgets::Palettemenu::fixMenu" body line 28)
+    invoked from within
+"::palettemenu5 fixMenu -now"
+    (in namespace inscope "::cwidgets::Palettemenu" script line 1)
+    invoked from within
+"namespace inscope ::cwidgets::Palettemenu {::palettemenu5 fixMenu -now}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Thu Apr 23 12:30:55 AM EDT 2026
+invalid command name "::palettemenu6"
+    while executing
+"$_popup_sl_name_colors select """
+    (method "::WaveWindow::_build_signallistPopup" body line 456)
+    invoked from within
+"_build_${c}Popup $m $x $y"
+    (method "::WaveWindow::_popupCallback" body line 3)
+    invoked from within
+"::.waveWindow0 _popupCallback .waveWindow0.work.user.waveset.popup signallist 95 211"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 _popupCallback .waveWindow0.work.user.waveset.popup signallist 95 211}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (method "::WaveSet::_popupCallback" body line 91)
+    invoked from within
+"::.waveWindow0.work.user.waveset _popupCallback signallist 95 211 219 516"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _popupCallback signallist 95 211 219 516}"
+    (command bound to event)
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:31:20 AM EDT 2026
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:49:31 AM EDT 2026
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:51:58 AM EDT 2026
+Exit XM-Sim: user
+      Design: worklib.tb_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       25.09-s001
+        User: mdnguye0
+        Host: vlsicad.ecs.umass.edu
+Time Started: Thu Apr 23 12:13:21 AM EDT 2026
+  Process ID: 1829323
+   Directory: /home/ece558_658_2025/mdnguye0/ece559_proj/modules
+     Command: xrun -clean -uvm -gui -access +rwc sources/tpu_top.sv sources/weight_sram.sv sources/weight_fifo.sv sources/weight_controller.sv sources/act_sram.sv sources/input_fifo.sv sources/act_skew_buffer.sv sources/systolic_array.sv sources/pe.sv UVM/env/interfaces/tpu_if.sv UVM/env/seq_items/weight_item.sv UVM/env/seq_items/act_item.sv UVM/env/sequences/weight_sequence.sv UVM/env/sequences/act_sequence.sv UVM/env/agents/weight_agent/weight_sequencer.sv UVM/env/agents/weight_agent/weight_driver.sv UVM/env/agents/weight_agent/weight_monitor.sv UVM/env/agents/weight_agent/weight_agent.sv UVM/env/agents/act_agent/act_sequencer.sv UVM/env/agents/act_agent/act_driver.sv UVM/env/agents/act_agent/act_monitor.sv UVM/env/agents/act_agent/act_agent.sv UVM/env/tpu_env.sv UVM/tests/tpu_test.sv tb_top.sv
+
+ 
+*** Message Type: info ***
+When: Thu Apr 23 12:51:59 AM EDT 2026
+SimVision Exit.
+ 

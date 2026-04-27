@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-uvm
+-compile
+../env/seq_items/weight_item.sv
+../env/sequences/weight_sequence.sv
+../env/agents/weight_agent/weight_sequencer.sv
+../env/agents/weight_agent/weight_driver.sv
+../env/agents/weight_agent/weight_monitor.sv
+../env/agents/weight_agent/weight_agent.sv
+../env/tpu_env.sv
+tpu_test.sv

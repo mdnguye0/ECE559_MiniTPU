@@ -1,0 +1,8 @@
+xrun(64): 25.09-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.09-s001: Started on Apr 17, 2026 at 00:17:22 EDT
+xrun
+	-uvm
+	-compile
+	tpu_if.sv
+xrun: *SE,FILEMIS: Cannot find the provided file tpu_if.sv.
+TOOL:	xrun(64)	25.09-s001: Exiting on Apr 17, 2026 at 00:17:23 EDT  (total: 00:00:01)

@@ -1,0 +1,2 @@
+#e1(20Apr2026:12:05:18): source ./xcelium.d/env.d/env.history.20Apr2026_12_05_18
+s1(20Apr2026:12:05:18):  xrun -clean -uvm -compile ../../seq_items/weight_item.sv weight_sequencer.sv weight_driver.sv weight_monitor.sv weight_agent.sv 

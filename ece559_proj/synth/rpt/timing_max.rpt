@@ -1,0 +1,197 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tpu_top
+Version: T-2022.03-SP4
+Date   : Sat Apr 25 01:39:08 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_1P1V_0C   Library: fast_vdd1v0
+Wire Load Model Mode: top
+
+  Startpoint: w_ctrl_inst/count_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core_array_inst/COLS[15].ROWS[15].pe_inst/psum_reg_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  w_ctrl_inst/count_reg[7]/CK (DFFRHQX1)                0.0000 #   0.0000 r
+  w_ctrl_inst/count_reg[7]/Q (DFFRHQX1)                 0.0604     0.0604 r
+  w_ctrl_inst/weight_row[3] (weight_controller_N16_WT_WIDTH16)
+                                                        0.0000     0.0604 r
+  U4988/Y (AND2X1)                                      0.0268     0.0872 r
+  U4987/Y (AND2X1)                                      0.0272     0.1144 r
+  U4989/Y (AND2X1)                                      0.0539     0.1683 r
+  U5613/Y (NAND2X1)                                     0.0746     0.2429 f
+  U5021/Y (INVX1)                                       0.0531     0.2959 r
+  core_array_inst/weight_load_en[15][15] (systolic_array_N16_ACT_WIDTH16_WT_WIDTH16_PSUM_WIDTH32)
+                                                        0.0000     0.2959 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/load_weight (pe_ACT_WIDTH16_WT_WIDTH16_PSUM_WIDTH32_0)
+                                                        0.0000     0.2959 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U74/Y (INVX1)
+                                                        0.0372     0.3331 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1101/Y (OAI22X1)
+                                                        0.0232     0.3563 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1074/Y (BUFX2)
+                                                        0.0366     0.3929 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U837/Y (INVX1)
+                                                        0.0327     0.4256 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1062/Y (XNOR2X1)
+                                                        0.0385     0.4640 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1059/Y (OAI22X1)
+                                                        0.0236     0.4876 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1058/Y (NAND2X1)
+                                                        0.0184     0.5061 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1057/Y (OAI21X1)
+                                                        0.0231     0.5292 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1040/Y (OR2X1)
+                                                        0.0320     0.5612 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1039/Y (AOI22X1)
+                                                        0.0234     0.5846 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1038/Y (XNOR2X1)
+                                                        0.0342     0.6188 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1037/Y (XNOR2X1)
+                                                        0.0291     0.6479 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1036/Y (AND2X1)
+                                                        0.0196     0.6675 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1029/Y (OR2X1)
+                                                        0.0296     0.6971 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U1028/Y (AOI22X1)
+                                                        0.0227     0.7198 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U978/Y (AND2X1)
+                                                        0.0306     0.7504 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U976/Y (OAI22X1)
+                                                        0.0258     0.7761 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U972/Y (OR2X1)
+                                                        0.0310     0.8072 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U971/Y (AOI22X1)
+                                                        0.0227     0.8298 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U907/Y (AND2X1)
+                                                        0.0306     0.8604 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U905/Y (OAI22X1)
+                                                        0.0258     0.8862 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U901/Y (OR2X1)
+                                                        0.0310     0.9172 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U900/Y (AOI22X1)
+                                                        0.0227     0.9399 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U821/Y (AND2X1)
+                                                        0.0306     0.9705 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U819/Y (OAI22X1)
+                                                        0.0258     0.9963 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U815/Y (OR2X1)
+                                                        0.0310     1.0273 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U814/Y (AOI22X1)
+                                                        0.0227     1.0500 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U723/Y (AND2X1)
+                                                        0.0306     1.0806 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U721/Y (OAI22X1)
+                                                        0.0258     1.1063 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U717/Y (OR2X1)
+                                                        0.0310     1.1373 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U716/Y (AOI22X1)
+                                                        0.0227     1.1600 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U616/Y (AND2X1)
+                                                        0.0306     1.1906 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U614/Y (OAI22X1)
+                                                        0.0258     1.2164 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U610/Y (OR2X1)
+                                                        0.0310     1.2474 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U609/Y (AOI22X1)
+                                                        0.0227     1.2701 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U503/Y (AND2X1)
+                                                        0.0306     1.3007 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U501/Y (OAI22X1)
+                                                        0.0258     1.3265 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U497/Y (OR2X1)
+                                                        0.0310     1.3575 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U496/Y (AOI22X1)
+                                                        0.0227     1.3802 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U404/Y (AND2X1)
+                                                        0.0306     1.4107 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U402/Y (OAI22X1)
+                                                        0.0258     1.4365 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U398/Y (OR2X1)
+                                                        0.0310     1.4675 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U397/Y (AOI22X1)
+                                                        0.0227     1.4902 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U308/Y (AND2X1)
+                                                        0.0306     1.5208 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U306/Y (OAI22X1)
+                                                        0.0258     1.5466 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U302/Y (OR2X1)
+                                                        0.0310     1.5776 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U301/Y (AOI22X1)
+                                                        0.0227     1.6003 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U230/Y (AND2X1)
+                                                        0.0306     1.6309 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U228/Y (OAI22X1)
+                                                        0.0258     1.6566 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U224/Y (OR2X1)
+                                                        0.0310     1.6877 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U223/Y (AOI22X1)
+                                                        0.0227     1.7103 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U161/Y (AND2X1)
+                                                        0.0306     1.7409 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U159/Y (OAI22X1)
+                                                        0.0258     1.7667 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U155/Y (OR2X1)
+                                                        0.0310     1.7977 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U154/Y (AOI22X1)
+                                                        0.0227     1.8204 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U106/Y (AND2X1)
+                                                        0.0306     1.8510 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U104/Y (OAI22X1)
+                                                        0.0258     1.8768 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U100/Y (OR2X1)
+                                                        0.0310     1.9078 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U99/Y (AOI22X1)
+                                                        0.0227     1.9305 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U60/Y (AND2X1)
+                                                        0.0306     1.9610 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U58/Y (OAI22X1)
+                                                        0.0258     1.9869 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U54/Y (NAND2BX1)
+                                                        0.0260     2.0129 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U53/Y (AOI22X1)
+                                                        0.0260     2.0389 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U32/Y (AND2X1)
+                                                        0.0306     2.0695 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U30/Y (OAI22X1)
+                                                        0.0258     2.0952 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U26/Y (OR2X1)
+                                                        0.0333     2.1286 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U25/Y (AOI22X1)
+                                                        0.0196     2.1482 r
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U20/Y (XNOR2X1)
+                                                        0.0441     2.1923 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/U19/Y (AO22X1)
+                                                        0.0355     2.2278 f
+  core_array_inst/COLS[15].ROWS[15].pe_inst/psum_reg_reg[31]/D (DFFRHQX1)
+                                                        0.0000     2.2278 f
+  data arrival time                                                2.2278
+
+  clock clk (rise edge)                                 5.0000     5.0000
+  clock network delay (ideal)                           0.0000     5.0000
+  clock uncertainty                                    -0.0500     4.9500
+  core_array_inst/COLS[15].ROWS[15].pe_inst/psum_reg_reg[31]/CK (DFFRHQX1)
+                                                        0.0000     4.9500 r
+  library setup time                                   -0.0117     4.9383
+  data required time                                               4.9383
+  --------------------------------------------------------------------------
+  data required time                                               4.9383
+  data arrival time                                               -2.2278
+  --------------------------------------------------------------------------
+  slack (MET)                                                      2.7106
+
+
+1

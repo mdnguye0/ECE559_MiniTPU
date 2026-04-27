@@ -1,0 +1,34 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/tpu_top.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/weight_sram.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/weight_fifo.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/weight_controller.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/act_sram.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/input_fifo.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/act_skew_buffer.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/systolic_array.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/sources/pe.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/interfaces/tpu_if.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/seq_items/weight_item.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/seq_items/act_item.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/seq_items/out_item.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/sequences/weight_sequence.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/sequences/act_sequence.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/weight_agent/weight_sequencer.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/weight_agent/weight_driver.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/weight_agent/weight_monitor.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/weight_agent/weight_agent.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/act_agent/act_sequencer.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/act_agent/act_driver.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/act_agent/act_monitor.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/act_agent/act_agent.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/out_agent/out_monitor.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/agents/out_agent/out_agent.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/tpu_scoreboard.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/env/tpu_env.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/tests/tpu_test.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/UVM/tests/tpu_reset_test.sv
+/home/ece558_658_2025/mdnguye0/ece559_proj/modules/tb_top.sv

@@ -1,0 +1,2 @@
+#e1(21Apr2026:00:10:46): source ./xcelium.d/env.d/env.history.21Apr2026_00_10_46
+s1(21Apr2026:00:10:46):  xrun -clean -uvm -compile ../../seq_items/act_item.sv act_sequencer.sv act_driver.sv act_monitor.sv act_agent.sv 

@@ -1,0 +1,2132 @@
+[04/25 20:27:20      0s] 
+[04/25 20:27:20      0s] Cadence Innovus(TM) Implementation System.
+[04/25 20:27:20      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/25 20:27:20      0s] 
+[04/25 20:27:20      0s] Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+[04/25 20:27:20      0s] Options:	
+[04/25 20:27:20      0s] Date:		Sat Apr 25 20:27:20 2026
+[04/25 20:27:20      0s] Host:		vlsicad.ecs.umass.edu (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz 22528KB)
+[04/25 20:27:20      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[04/25 20:27:20      0s] 
+[04/25 20:27:20      0s] License:
+[04/25 20:27:20      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[04/25 20:27:20      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/25 20:27:26      0s] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /opt/cadence/innovus20/tools.lnx86/lib/64bit/libstdc++.so.6: version `GLIBCXX_3.4.31' not found (required by /opt/cadence/ic251_hotfix/install/oa_v22.62.011/lib/linux_rhel80_64/opt/liboaDesign.so)
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /opt/cadence/innovus20/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[04/25 20:27:41     10s] @(#)CDS: Innovus v20.10-p004_1 (64bit) 05/07/2020 20:02 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/25 20:27:41     10s] @(#)CDS: NanoRoute 20.10-p004_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[04/25 20:27:41     10s] @(#)CDS: AAE 20.10-p005 (64bit) 05/07/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/25 20:27:41     10s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[04/25 20:27:41     10s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[04/25 20:27:41     10s] @(#)CDS: CPE v20.10-p006
+[04/25 20:27:41     10s] @(#)CDS: IQuantus/TQuantus 19.1.3-s155 (64bit) Sun Nov 3 18:26:52 PST 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/25 20:27:41     10s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[04/25 20:27:41     10s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[04/25 20:27:41     10s] @(#)CDS: RCDB 11.15.0
+[04/25 20:27:41     10s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[04/25 20:27:41     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2576344_vlsicad.ecs.umass.edu_mdnguye0_Pesu2Q.
+
+[04/25 20:27:41     10s] Change the soft stacksize limit to 0.2%RAM (514 mbytes). Set global soft_stack_size_limit to change the value.
+[04/25 20:27:45     11s] 
+[04/25 20:27:45     11s] **INFO:  MMMC transition support version v31-84 
+[04/25 20:27:45     11s] 
+[04/25 20:27:45     11s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/25 20:27:45     11s] <CMD> suppressMessage ENCEXT-2799
+[04/25 20:27:45     11s] <CMD> getVersion
+[04/25 20:27:45     11s] [INFO] Loading Pegasus 24.13 fill procedures
+[04/25 20:27:46     11s] <CMD> win
+[04/25 20:28:02     12s] <CMD> set init_lef_file lib/gsclib045.lef
+[04/25 20:28:02     12s] <CMD> set init_verilog netlist.v
+[04/25 20:28:02     12s] <CMD> set init_top_cell tpu_top
+[04/25 20:28:02     12s] <CMD> set init_mmmc_file mmmc.tcl
+[04/25 20:28:02     12s] <CMD> set init_pwr_net VDD
+[04/25 20:28:02     12s] <CMD> set init_gnd_net VSS
+[04/25 20:28:02     12s] <CMD> setDesignMode -process 45
+[04/25 20:28:02     12s] ##  Process: 45            (User Set)               
+[04/25 20:28:02     12s] ##     Node: (not set)                           
+[04/25 20:28:02     12s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[04/25 20:28:02     12s] Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[04/25 20:28:02     12s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[04/25 20:28:02     12s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[04/25 20:28:02     12s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[04/25 20:28:02     12s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[04/25 20:28:02     12s] <CMD> init_design
+[04/25 20:28:02     12s] **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OpenAccess features are disabled in this session.
+#% Begin Load MMMC data ... (date=04/25 20:28:02, mem=663.7M)
+[04/25 20:28:02     12s] #% End Load MMMC data ... (date=04/25 20:28:02, total cpu=0:00:00.0, real=0:00:00.0, peak res=663.9M, current mem=663.9M)
+[04/25 20:28:02     12s] 
+[04/25 20:28:02     12s] Loading LEF file lib/gsclib045.lef ...
+[04/25 20:28:02     12s] Set DBUPerIGU to M2 pitch 400.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'ECK' in macro 'TLATNCAX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'DFFHQX8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'NAND4XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'MXI2XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'INVX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI222X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'DLY3X1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X3' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OA22X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI31X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OA21X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[04/25 20:28:02     12s] Type 'man IMPLF-201' for more detail.
+[04/25 20:28:02     12s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[04/25 20:28:02     12s] To increase the message display limit, refer to the product command reference manual.
+[04/25 20:28:02     12s] 
+[04/25 20:28:02     12s] viaInitial starts at Sat Apr 25 20:28:02 2026
+viaInitial ends at Sat Apr 25 20:28:02 2026
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[04/25 20:28:02     12s] Loading view definition file from mmmc.tcl
+[04/25 20:28:02     12s] Reading lib_slow_1v0 timing library '/home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib' ...
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/slow_vdd1v0_basicCells.lib)
+[04/25 20:28:02     12s] Read 489 cells in library 'slow_vdd1v0' 
+[04/25 20:28:02     12s] Reading lib_fast_1v0 timing library '/home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib' ...
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/ece558_658_2025/mdnguye0/ece559_proj/pnr/lib/fast_vdd1v0_basicCells.lib)
+[04/25 20:28:03     13s] Read 489 cells in library 'fast_vdd1v0' 
+[04/25 20:28:03     13s] Ending "PreSetAnalysisView" (total cpu=0:00:01.0, real=0:00:01.0, peak res=740.6M, current mem=687.0M)
+[04/25 20:28:03     13s] *** End library_loading (cpu=0.02min, real=0.02min, mem=40.9M, fe_cpu=0.22min, fe_real=0.72min, fe_mem=715.7M) ***
+[04/25 20:28:03     13s] #% Begin Load netlist data ... (date=04/25 20:28:03, mem=687.0M)
+[04/25 20:28:03     13s] *** Begin netlist parsing (mem=715.7M) ***
+[04/25 20:28:03     13s] Created 489 new cells from 2 timing libraries.
+[04/25 20:28:03     13s] Reading netlist ...
+[04/25 20:28:03     13s] Backslashed names will retain backslash and a trailing blank character.
+[04/25 20:28:04     14s] Reading verilog netlist 'netlist.v'
+[04/25 20:28:07     17s] 
+[04/25 20:28:07     17s] *** Memory Usage v#1 (Current mem = 1073.660M, initial mem = 273.977M) ***
+[04/25 20:28:07     17s] *** End netlist parsing (cpu=0:00:04.5, real=0:00:04.0, mem=1073.7M) ***
+[04/25 20:28:07     17s] #% End Load netlist data ... (date=04/25 20:28:07, total cpu=0:00:04.5, real=0:00:04.0, peak res=1060.7M, current mem=939.3M)
+[04/25 20:28:07     17s] Set top cell to tpu_top.
+[04/25 20:28:14     18s] Hooked 978 DB cells to tlib cells.
+[04/25 20:28:14     18s] ** Removed 9 unused lib cells.
+[04/25 20:28:14     18s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=945.1M, current mem=945.1M)
+[04/25 20:28:15     18s] Starting recursive module instantiation check.
+[04/25 20:28:15     18s] No recursion found.
+[04/25 20:28:15     18s] Building hierarchical netlist for Cell tpu_top ...
+[04/25 20:28:15     20s] *** Netlist is unique.
+[04/25 20:28:15     20s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[04/25 20:28:15     20s] ** info: there are 1996 modules.
+[04/25 20:28:15     20s] ** info: there are 640673 stdCell insts.
+[04/25 20:28:16     20s] 
+[04/25 20:28:16     20s] *** Memory Usage v#1 (Current mem = 1401.574M, initial mem = 273.977M) ***
+[04/25 20:28:16     21s] Horizontal Layer M1 offset = 190 (derived)
+[04/25 20:28:16     21s] Vertical Layer M2 offset = 200 (derived)
+[04/25 20:28:16     21s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:16     21s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[04/25 20:28:17     21s] Set Default Net Delay as 1000 ps.
+[04/25 20:28:17     21s] Set Default Net Load as 0.5 pF. 
+[04/25 20:28:17     21s] Set Default Input Pin Transition as 0.1 ps.
+[04/25 20:28:17     21s] Extraction setup Started 
+[04/25 20:28:17     21s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[04/25 20:28:17     21s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[04/25 20:28:18     22s] Metal Layer Id 1 is Metal1 
+[04/25 20:28:18     22s] Metal Layer Id 2 is Metal2 
+[04/25 20:28:18     22s] Metal Layer Id 3 is Metal3 
+[04/25 20:28:18     22s] Metal Layer Id 4 is Metal4 
+[04/25 20:28:18     22s] Metal Layer Id 5 is Metal5 
+[04/25 20:28:18     22s] Metal Layer Id 6 is Metal6 
+[04/25 20:28:18     22s] Metal Layer Id 7 is Metal7 
+[04/25 20:28:18     22s] Metal Layer Id 8 is Metal8 
+[04/25 20:28:18     22s] Metal Layer Id 9 is Metal9 
+[04/25 20:28:18     22s] Via Layer Id 33 is Cont 
+[04/25 20:28:18     22s] Via Layer Id 34 is Via1 
+[04/25 20:28:18     22s] Via Layer Id 35 is Via2 
+[04/25 20:28:18     22s] Via Layer Id 36 is Via3 
+[04/25 20:28:18     22s] Via Layer Id 37 is Via4 
+[04/25 20:28:18     22s] Via Layer Id 38 is Via5 
+[04/25 20:28:18     22s] Via Layer Id 39 is Via6 
+[04/25 20:28:18     22s] Via Layer Id 40 is Via7 
+[04/25 20:28:18     22s] Via Layer Id 41 is Via8 
+[04/25 20:28:18     22s] Generating auto layer map file.
+[04/25 20:28:18     22s]  lef metal Layer Id 1 mapped to tech Id 6 of Layer metal1_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 1 mapped to tech Id 7 of Layer via1 
+[04/25 20:28:18     22s]  lef metal Layer Id 2 mapped to tech Id 8 of Layer metal2_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 2 mapped to tech Id 9 of Layer via2 
+[04/25 20:28:18     22s]  lef metal Layer Id 3 mapped to tech Id 10 of Layer metal3_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 3 mapped to tech Id 11 of Layer via3 
+[04/25 20:28:18     22s]  lef metal Layer Id 4 mapped to tech Id 12 of Layer metal4_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 4 mapped to tech Id 13 of Layer via4 
+[04/25 20:28:18     22s]  lef metal Layer Id 5 mapped to tech Id 14 of Layer metal5_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 5 mapped to tech Id 15 of Layer via5 
+[04/25 20:28:18     22s]  lef metal Layer Id 6 mapped to tech Id 16 of Layer metal6_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 6 mapped to tech Id 17 of Layer via6 
+[04/25 20:28:18     22s]  lef metal Layer Id 7 mapped to tech Id 18 of Layer metal7_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 7 mapped to tech Id 19 of Layer via7 
+[04/25 20:28:18     22s]  lef metal Layer Id 8 mapped to tech Id 20 of Layer metal8_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 8 mapped to tech Id 21 of Layer via8 
+[04/25 20:28:18     22s]  lef metal Layer Id 9 mapped to tech Id 22 of Layer metal9_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 9 mapped to tech Id 23 of Layer via9 
+[04/25 20:28:18     22s]  lef metal Layer Id 10 mapped to tech Id 24 of Layer metal10_conn 
+[04/25 20:28:18     22s]  lef via Layer Id 10 mapped to tech Id 25 of Layer via10_nocap 
+[04/25 20:28:18     22s]  lef metal Layer Id 11 mapped to tech Id 27 of Layer metal11_conn 
+[04/25 20:28:18     22s] Metal Layer Id 1 mapped to 6 
+[04/25 20:28:18     22s] Via Layer Id 1 mapped to 7 
+[04/25 20:28:18     22s] Metal Layer Id 2 mapped to 8 
+[04/25 20:28:18     22s] Via Layer Id 2 mapped to 9 
+[04/25 20:28:18     22s] Metal Layer Id 3 mapped to 10 
+[04/25 20:28:18     22s] Via Layer Id 3 mapped to 11 
+[04/25 20:28:18     22s] Metal Layer Id 4 mapped to 12 
+[04/25 20:28:18     22s] Via Layer Id 4 mapped to 13 
+[04/25 20:28:18     22s] Metal Layer Id 5 mapped to 14 
+[04/25 20:28:18     22s] Via Layer Id 5 mapped to 15 
+[04/25 20:28:18     22s] Metal Layer Id 6 mapped to 16 
+[04/25 20:28:18     22s] Via Layer Id 6 mapped to 17 
+[04/25 20:28:18     22s] Metal Layer Id 7 mapped to 18 
+[04/25 20:28:18     22s] Via Layer Id 7 mapped to 19 
+[04/25 20:28:18     22s] Metal Layer Id 8 mapped to 20 
+[04/25 20:28:18     22s] Via Layer Id 8 mapped to 21 
+[04/25 20:28:18     22s] Metal Layer Id 9 mapped to 22 
+[04/25 20:28:18     22s] Via Layer Id 9 mapped to 23 
+[04/25 20:28:18     22s] Metal Layer Id 10 mapped to 24 
+[04/25 20:28:18     22s] Via Layer Id 10 mapped to 25 
+[04/25 20:28:18     22s] Metal Layer Id 11 mapped to 27 
+[04/25 20:28:18     22s] Restore PreRoute Pattern Extraction data failed.
+[04/25 20:28:18     22s] Importing multi-corner technology file(s) for preRoute extraction...
+[04/25 20:28:18     22s] /opt/cadence/gpdk045/gpdk045_v_6_0/qrc/rcworst/qrcTechFile
+[04/25 20:28:19     23s] Metal Layer Id 1 is Metal1 
+[04/25 20:28:19     23s] Metal Layer Id 2 is Metal2 
+[04/25 20:28:19     23s] Metal Layer Id 3 is Metal3 
+[04/25 20:28:19     23s] Metal Layer Id 4 is Metal4 
+[04/25 20:28:19     23s] Metal Layer Id 5 is Metal5 
+[04/25 20:28:19     23s] Metal Layer Id 6 is Metal6 
+[04/25 20:28:19     23s] Metal Layer Id 7 is Metal7 
+[04/25 20:28:19     23s] Metal Layer Id 8 is Metal8 
+[04/25 20:28:19     23s] Metal Layer Id 9 is Metal9 
+[04/25 20:28:19     23s] Via Layer Id 33 is Cont 
+[04/25 20:28:19     23s] Via Layer Id 34 is Via1 
+[04/25 20:28:19     23s] Via Layer Id 35 is Via2 
+[04/25 20:28:19     23s] Via Layer Id 36 is Via3 
+[04/25 20:28:19     23s] Via Layer Id 37 is Via4 
+[04/25 20:28:19     23s] Via Layer Id 38 is Via5 
+[04/25 20:28:19     23s] Via Layer Id 39 is Via6 
+[04/25 20:28:19     23s] Via Layer Id 40 is Via7 
+[04/25 20:28:19     23s] Via Layer Id 41 is Via8 
+[04/25 20:28:19     23s] Generating auto layer map file.
+[04/25 20:28:19     23s]  lef metal Layer Id 1 mapped to tech Id 6 of Layer metal1_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 1 mapped to tech Id 7 of Layer via1 
+[04/25 20:28:19     23s]  lef metal Layer Id 2 mapped to tech Id 8 of Layer metal2_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 2 mapped to tech Id 9 of Layer via2 
+[04/25 20:28:19     23s]  lef metal Layer Id 3 mapped to tech Id 10 of Layer metal3_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 3 mapped to tech Id 11 of Layer via3 
+[04/25 20:28:19     23s]  lef metal Layer Id 4 mapped to tech Id 12 of Layer metal4_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 4 mapped to tech Id 13 of Layer via4 
+[04/25 20:28:19     23s]  lef metal Layer Id 5 mapped to tech Id 14 of Layer metal5_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 5 mapped to tech Id 15 of Layer via5 
+[04/25 20:28:19     23s]  lef metal Layer Id 6 mapped to tech Id 16 of Layer metal6_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 6 mapped to tech Id 17 of Layer via6 
+[04/25 20:28:19     23s]  lef metal Layer Id 7 mapped to tech Id 18 of Layer metal7_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 7 mapped to tech Id 19 of Layer via7 
+[04/25 20:28:19     23s]  lef metal Layer Id 8 mapped to tech Id 20 of Layer metal8_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 8 mapped to tech Id 21 of Layer via8 
+[04/25 20:28:19     23s]  lef metal Layer Id 9 mapped to tech Id 22 of Layer metal9_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 9 mapped to tech Id 23 of Layer via9 
+[04/25 20:28:19     23s]  lef metal Layer Id 10 mapped to tech Id 24 of Layer metal10_conn 
+[04/25 20:28:19     23s]  lef via Layer Id 10 mapped to tech Id 25 of Layer via10_nocap 
+[04/25 20:28:19     23s]  lef metal Layer Id 11 mapped to tech Id 27 of Layer metal11_conn 
+[04/25 20:28:19     23s] Metal Layer Id 1 mapped to 6 
+[04/25 20:28:19     23s] Via Layer Id 1 mapped to 7 
+[04/25 20:28:19     23s] Metal Layer Id 2 mapped to 8 
+[04/25 20:28:19     23s] Via Layer Id 2 mapped to 9 
+[04/25 20:28:19     23s] Metal Layer Id 3 mapped to 10 
+[04/25 20:28:19     23s] Via Layer Id 3 mapped to 11 
+[04/25 20:28:19     23s] Metal Layer Id 4 mapped to 12 
+[04/25 20:28:19     23s] Via Layer Id 4 mapped to 13 
+[04/25 20:28:19     23s] Metal Layer Id 5 mapped to 14 
+[04/25 20:28:19     23s] Via Layer Id 5 mapped to 15 
+[04/25 20:28:19     23s] Metal Layer Id 6 mapped to 16 
+[04/25 20:28:19     23s] Via Layer Id 6 mapped to 17 
+[04/25 20:28:19     23s] Metal Layer Id 7 mapped to 18 
+[04/25 20:28:19     23s] Via Layer Id 7 mapped to 19 
+[04/25 20:28:19     23s] Metal Layer Id 8 mapped to 20 
+[04/25 20:28:19     23s] Via Layer Id 8 mapped to 21 
+[04/25 20:28:19     23s] Metal Layer Id 9 mapped to 22 
+[04/25 20:28:19     23s] Via Layer Id 9 mapped to 23 
+[04/25 20:28:19     23s] Metal Layer Id 10 mapped to 24 
+[04/25 20:28:19     23s] Via Layer Id 10 mapped to 25 
+[04/25 20:28:19     23s] Metal Layer Id 11 mapped to 27 
+[04/25 20:28:21     26s] /opt/cadence/gpdk045/gpdk045_v_6_0/qrc/rcbest/qrcTechFile
+[04/25 20:28:22     26s] Metal Layer Id 1 is Metal1 
+[04/25 20:28:22     26s] Metal Layer Id 2 is Metal2 
+[04/25 20:28:22     26s] Metal Layer Id 3 is Metal3 
+[04/25 20:28:22     26s] Metal Layer Id 4 is Metal4 
+[04/25 20:28:22     26s] Metal Layer Id 5 is Metal5 
+[04/25 20:28:22     26s] Metal Layer Id 6 is Metal6 
+[04/25 20:28:22     26s] Metal Layer Id 7 is Metal7 
+[04/25 20:28:22     26s] Metal Layer Id 8 is Metal8 
+[04/25 20:28:22     26s] Metal Layer Id 9 is Metal9 
+[04/25 20:28:22     26s] Via Layer Id 33 is Cont 
+[04/25 20:28:22     26s] Via Layer Id 34 is Via1 
+[04/25 20:28:22     26s] Via Layer Id 35 is Via2 
+[04/25 20:28:22     26s] Via Layer Id 36 is Via3 
+[04/25 20:28:22     26s] Via Layer Id 37 is Via4 
+[04/25 20:28:22     26s] Via Layer Id 38 is Via5 
+[04/25 20:28:22     26s] Via Layer Id 39 is Via6 
+[04/25 20:28:22     26s] Via Layer Id 40 is Via7 
+[04/25 20:28:22     26s] Via Layer Id 41 is Via8 
+[04/25 20:28:22     26s] Generating auto layer map file.
+[04/25 20:28:22     26s]  lef metal Layer Id 1 mapped to tech Id 6 of Layer metal1_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 1 mapped to tech Id 7 of Layer via1 
+[04/25 20:28:22     26s]  lef metal Layer Id 2 mapped to tech Id 8 of Layer metal2_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 2 mapped to tech Id 9 of Layer via2 
+[04/25 20:28:22     26s]  lef metal Layer Id 3 mapped to tech Id 10 of Layer metal3_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 3 mapped to tech Id 11 of Layer via3 
+[04/25 20:28:22     26s]  lef metal Layer Id 4 mapped to tech Id 12 of Layer metal4_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 4 mapped to tech Id 13 of Layer via4 
+[04/25 20:28:22     26s]  lef metal Layer Id 5 mapped to tech Id 14 of Layer metal5_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 5 mapped to tech Id 15 of Layer via5 
+[04/25 20:28:22     26s]  lef metal Layer Id 6 mapped to tech Id 16 of Layer metal6_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 6 mapped to tech Id 17 of Layer via6 
+[04/25 20:28:22     26s]  lef metal Layer Id 7 mapped to tech Id 18 of Layer metal7_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 7 mapped to tech Id 19 of Layer via7 
+[04/25 20:28:22     26s]  lef metal Layer Id 8 mapped to tech Id 20 of Layer metal8_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 8 mapped to tech Id 21 of Layer via8 
+[04/25 20:28:22     26s]  lef metal Layer Id 9 mapped to tech Id 22 of Layer metal9_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 9 mapped to tech Id 23 of Layer via9 
+[04/25 20:28:22     26s]  lef metal Layer Id 10 mapped to tech Id 24 of Layer metal10_conn 
+[04/25 20:28:22     26s]  lef via Layer Id 10 mapped to tech Id 25 of Layer via10_nocap 
+[04/25 20:28:22     26s]  lef metal Layer Id 11 mapped to tech Id 27 of Layer metal11_conn 
+[04/25 20:28:22     26s] Metal Layer Id 1 mapped to 6 
+[04/25 20:28:22     26s] Via Layer Id 1 mapped to 7 
+[04/25 20:28:22     26s] Metal Layer Id 2 mapped to 8 
+[04/25 20:28:22     26s] Via Layer Id 2 mapped to 9 
+[04/25 20:28:22     26s] Metal Layer Id 3 mapped to 10 
+[04/25 20:28:22     26s] Via Layer Id 3 mapped to 11 
+[04/25 20:28:22     26s] Metal Layer Id 4 mapped to 12 
+[04/25 20:28:22     26s] Via Layer Id 4 mapped to 13 
+[04/25 20:28:22     26s] Metal Layer Id 5 mapped to 14 
+[04/25 20:28:22     26s] Via Layer Id 5 mapped to 15 
+[04/25 20:28:22     26s] Metal Layer Id 6 mapped to 16 
+[04/25 20:28:22     26s] Via Layer Id 6 mapped to 17 
+[04/25 20:28:22     26s] Metal Layer Id 7 mapped to 18 
+[04/25 20:28:22     26s] Via Layer Id 7 mapped to 19 
+[04/25 20:28:22     26s] Metal Layer Id 8 mapped to 20 
+[04/25 20:28:22     26s] Via Layer Id 8 mapped to 21 
+[04/25 20:28:22     26s] Metal Layer Id 9 mapped to 22 
+[04/25 20:28:22     26s] Via Layer Id 9 mapped to 23 
+[04/25 20:28:22     26s] Metal Layer Id 10 mapped to 24 
+[04/25 20:28:22     26s] Via Layer Id 10 mapped to 25 
+[04/25 20:28:22     27s] Metal Layer Id 11 mapped to 27 
+[04/25 20:28:25     29s] Completed (cpu: 0:00:07.3 real: 0:00:08.0)
+[04/25 20:28:25     29s] Set Shrink Factor to 1.00000
+[04/25 20:28:25     29s] Summary of Active RC-Corners : 
+[04/25 20:28:25     29s]  
+[04/25 20:28:25     29s]  Analysis View: worst_1v0
+[04/25 20:28:25     29s]     RC-Corner Name        : rc_slow
+[04/25 20:28:25     29s]     RC-Corner Index       : 0
+[04/25 20:28:25     29s]     RC-Corner Temperature : 25 Celsius
+[04/25 20:28:25     29s]     RC-Corner Cap Table   : ''
+[04/25 20:28:25     29s]     RC-Corner PreRoute Res Factor         : 1
+[04/25 20:28:25     29s]     RC-Corner PreRoute Cap Factor         : 1
+[04/25 20:28:25     29s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner Technology file: '/opt/cadence/gpdk045/gpdk045_v_6_0/qrc/rcworst/qrcTechFile'
+[04/25 20:28:25     29s]  
+[04/25 20:28:25     29s]  Analysis View: best_1v0
+[04/25 20:28:25     29s]     RC-Corner Name        : rc_fast
+[04/25 20:28:25     29s]     RC-Corner Index       : 1
+[04/25 20:28:25     29s]     RC-Corner Temperature : 25 Celsius
+[04/25 20:28:25     29s]     RC-Corner Cap Table   : ''
+[04/25 20:28:25     29s]     RC-Corner PreRoute Res Factor         : 1
+[04/25 20:28:25     29s]     RC-Corner PreRoute Cap Factor         : 1
+[04/25 20:28:25     29s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[04/25 20:28:25     29s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[04/25 20:28:25     29s]     RC-Corner Technology file: '/opt/cadence/gpdk045/gpdk045_v_6_0/qrc/rcbest/qrcTechFile'
+[04/25 20:28:25     29s] Technology file '/opt/cadence/gpdk045/gpdk045_v_6_0/qrc/rcworst/qrcTechFile' associated with first view 'worst_1v0' will be used as the primary corner for the multi-corner extraction.
+[04/25 20:28:25     29s] LayerId::1 widthSet size::1
+[04/25 20:28:25     29s] LayerId::2 widthSet size::1
+[04/25 20:28:25     29s] LayerId::3 widthSet size::1
+[04/25 20:28:25     29s] LayerId::4 widthSet size::1
+[04/25 20:28:25     29s] LayerId::5 widthSet size::1
+[04/25 20:28:25     29s] LayerId::6 widthSet size::1
+[04/25 20:28:25     29s] LayerId::7 widthSet size::1
+[04/25 20:28:25     29s] LayerId::8 widthSet size::1
+[04/25 20:28:25     29s] LayerId::9 widthSet size::1
+[04/25 20:28:25     29s] Updating RC grid for preRoute extraction ...
+[04/25 20:28:25     29s] Initializing multi-corner resistance tables ...
+[04/25 20:28:25     29s] **Info: Trial Route has Max Route Layer 15/9.
+[04/25 20:28:25     29s] {RT rc_slow 0 9 9 {8 0} 1}
+[04/25 20:28:25     29s] Preroute length aware model : LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 80 ; 
+[04/25 20:28:25     29s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[04/25 20:28:25     29s] *Info: initialize multi-corner CTS.
+[04/25 20:28:25     29s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1559.4M, current mem=1397.6M)
+[04/25 20:28:25     30s] Reading timing constraints file 'constraints.sdc' ...
+[04/25 20:28:25     30s] Current (total cpu=0:00:30.0, real=0:01:05, peak res=1581.1M, current mem=1581.1M)
+[04/25 20:28:25     30s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File constraints.sdc, Line 8).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][31]' (File constraints.sdc, Line 10).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][31]' (File constraints.sdc, Line 10).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 10).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][30]' (File constraints.sdc, Line 11).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][30]' (File constraints.sdc, Line 11).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 11).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][29]' (File constraints.sdc, Line 12).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][29]' (File constraints.sdc, Line 12).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 12).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][28]' (File constraints.sdc, Line 13).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][28]' (File constraints.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][27]' (File constraints.sdc, Line 14).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][27]' (File constraints.sdc, Line 14).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 14).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][26]' (File constraints.sdc, Line 15).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][26]' (File constraints.sdc, Line 15).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 15).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][25]' (File constraints.sdc, Line 16).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][25]' (File constraints.sdc, Line 16).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 16).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][24]' (File constraints.sdc, Line 17).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][24]' (File constraints.sdc, Line 17).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][23]' (File constraints.sdc, Line 18).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][23]' (File constraints.sdc, Line 18).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][22]' (File constraints.sdc, Line 19).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'tpu_out[0][22]' (File constraints.sdc, Line 19).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File constraints.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][21]' (File constraints.sdc, Line 20).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] Message <TCLCMD-917> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File constraints.sdc, Line 20).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][20]' (File constraints.sdc, Line 21).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][19]' (File constraints.sdc, Line 22).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][18]' (File constraints.sdc, Line 23).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][17]' (File constraints.sdc, Line 24).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][16]' (File constraints.sdc, Line 25).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][15]' (File constraints.sdc, Line 26).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][14]' (File constraints.sdc, Line 27).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][13]' (File constraints.sdc, Line 28).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'tpu_out[0][12]' (File constraints.sdc, Line 29).
+[04/25 20:28:25     30s] 
+[04/25 20:28:25     30s] Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File constraints.sdc, Line 30).
+[04/25 20:28:25     30s] 
+[04/25 20:28:26     30s] **ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 820).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 821).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 822).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 823).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 824).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 825).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 826).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 827).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 828).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 829).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 830).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 831).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 832).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 833).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 834).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 835).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 836).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 837).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 838).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 839).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 840).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 841).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 842).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 843).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 844).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 845).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 846).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 847).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 848).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 849).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 850).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 851).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 852).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 853).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 854).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 855).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 856).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 857).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 858).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 859).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 860).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 861).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 862).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 863).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 864).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 865).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 866).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 867).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 868).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 869).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 870).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 871).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 872).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 873).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 874).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 875).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 876).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 877).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 878).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 879).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 880).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 881).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 882).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 883).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 884).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 885).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 886).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 887).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 888).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 889).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 890).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 891).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 892).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 893).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 894).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 895).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 896).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 897).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 898).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 899).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 900).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 901).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 902).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 903).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 904).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 905).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 906).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 907).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 908).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 909).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 910).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 911).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 912).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 913).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 914).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 915).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 916).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 917).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 918).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 919).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 920).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 921).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 922).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 923).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 924).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 925).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 926).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 927).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 928).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 929).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 930).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 931).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 932).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 933).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 934).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 935).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 936).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 937).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 938).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 939).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 940).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 941).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 942).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 943).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 944).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 945).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 946).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 947).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 948).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 949).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 950).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 951).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 952).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 953).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 954).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 955).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 956).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 957).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 958).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 959).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 960).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 961).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 962).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 963).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 964).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 965).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 966).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 967).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 968).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 969).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 970).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 971).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 972).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 973).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 974).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 975).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 976).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 977).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 978).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 979).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 980).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 981).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 982).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 983).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 984).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 985).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 986).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 987).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 988).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 989).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 990).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 991).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 992).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 993).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 994).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 995).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 996).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 997).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 998).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 999).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1000).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1001).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1002).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1003).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1004).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1005).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1006).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1007).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1008).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1009).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1010).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1011).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1012).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1013).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1014).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1015).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1016).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1017).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1018).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1019).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1020).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1021).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1022).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1023).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1024).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1025).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1026).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1027).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1028).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1029).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1030).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1031).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1032).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1033).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1034).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1035).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1036).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1037).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1038).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1039).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1040).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1041).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1042).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1043).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1044).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1045).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1046).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1047).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1048).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1049).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1050).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1051).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1052).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1053).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1054).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1055).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1056).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1057).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1058).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1059).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1060).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1061).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1062).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1063).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1064).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1065).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1066).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1067).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1068).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1069).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1070).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1071).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1072).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1073).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1074).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1075).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1076).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1077).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1078).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1079).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1080).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1081).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1082).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1083).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1084).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1085).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1086).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1087).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1088).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1089).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1090).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1091).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1092).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1093).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1094).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1095).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1096).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1097).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1098).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1099).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1100).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1101).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1102).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1103).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1104).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1105).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1106).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1107).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1108).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1109).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1110).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1111).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1112).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1113).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1114).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1115).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1116).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1117).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1118).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1119).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1120).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1121).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1122).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1123).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1124).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1125).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1126).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1127).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1128).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1129).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1130).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1131).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1132).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1133).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1134).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1135).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1136).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1137).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1138).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1139).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1140).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1141).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1142).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1143).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1144).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1145).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1146).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1147).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1148).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1149).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1150).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1151).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1152).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1153).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1154).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1155).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1156).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1157).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1158).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1159).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1160).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1161).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1162).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1163).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1164).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1165).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1166).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1167).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1168).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1169).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1170).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1171).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1172).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1173).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1174).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1175).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1176).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1177).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1178).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1179).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1180).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1181).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1182).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1183).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1184).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1185).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1186).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1187).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1188).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1189).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1190).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1191).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1192).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1193).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1194).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1195).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1196).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1197).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1198).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1199).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1200).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1201).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1202).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1203).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1204).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1205).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1206).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1207).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1208).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1209).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1210).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1211).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1212).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1213).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1214).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1215).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1216).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1217).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1218).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1219).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1220).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1221).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1222).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1223).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1224).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1225).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1226).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1227).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1228).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1229).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1230).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1231).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1232).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1233).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1234).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1235).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1236).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1237).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1238).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1239).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1240).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1241).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1242).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1243).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1244).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1245).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1246).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1247).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1248).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1249).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1250).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1251).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1252).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1253).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1254).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1255).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1256).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1257).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1258).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1259).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1260).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1261).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1262).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1263).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1264).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1265).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1266).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1267).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1268).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1269).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1270).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1271).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1272).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1273).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1274).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1275).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1276).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1277).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1278).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1279).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1280).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1281).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1282).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1283).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1284).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1285).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1286).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1287).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1288).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1289).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1290).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1291).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1292).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1293).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1294).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1295).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1296).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1297).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1298).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1299).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1300).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1301).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1302).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1303).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1304).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1305).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1306).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1307).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1308).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1309).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1310).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1311).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1312).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1313).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1314).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1315).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1316).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1317).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1318).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1319).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1320).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1321).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1322).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1323).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1324).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1325).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1326).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1327).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1328).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1329).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1330).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File constraints.sdc, Line 1331).
+
+INFO (CTE): Reading of timing constraints file constraints.sdc completed, with 21 Warnings and 532 Errors.
+[04/25 20:28:26     30s] Ending "Constraint file reading stats" (total cpu=0:00:00.5, real=0:00:01.0, peak res=1604.2M, current mem=1604.2M)
+[04/25 20:28:26     30s] Current (total cpu=0:00:30.6, real=0:01:06, peak res=1604.2M, current mem=1604.2M)
+[04/25 20:28:26     30s] Creating Cell Server ...(0, 1, 1, 1)
+[04/25 20:28:26     30s] Summary for sequential cells identification: 
+[04/25 20:28:26     30s]   Identified SBFF number: 104
+[04/25 20:28:26     30s]   Identified MBFF number: 0
+[04/25 20:28:26     30s]   Identified SB Latch number: 0
+[04/25 20:28:26     30s]   Identified MB Latch number: 0
+[04/25 20:28:26     30s]   Not identified SBFF number: 16
+[04/25 20:28:26     30s]   Not identified MBFF number: 0
+[04/25 20:28:26     30s]   Not identified SB Latch number: 0
+[04/25 20:28:26     30s]   Not identified MB Latch number: 0
+[04/25 20:28:26     30s]   Number of sequential cells which are not FFs: 32
+[04/25 20:28:26     30s] Total number of combinational cells: 318
+[04/25 20:28:26     30s] Total number of sequential cells: 152
+[04/25 20:28:26     30s] Total number of tristate cells: 10
+[04/25 20:28:26     30s] Total number of level shifter cells: 0
+[04/25 20:28:26     30s] Total number of power gating cells: 0
+[04/25 20:28:26     30s] Total number of isolation cells: 0
+[04/25 20:28:26     30s] Total number of power switch cells: 0
+[04/25 20:28:26     30s] Total number of pulse generator cells: 0
+[04/25 20:28:26     30s] Total number of always on buffers: 0
+[04/25 20:28:26     30s] Total number of retention cells: 0
+[04/25 20:28:26     30s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[04/25 20:28:26     30s] Total number of usable buffers: 16
+[04/25 20:28:26     30s] List of unusable buffers:
+[04/25 20:28:26     30s] Total number of unusable buffers: 0
+[04/25 20:28:26     30s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[04/25 20:28:26     30s] Total number of usable inverters: 19
+[04/25 20:28:26     30s] List of unusable inverters:
+[04/25 20:28:26     30s] Total number of unusable inverters: 0
+[04/25 20:28:26     30s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[04/25 20:28:26     30s] Total number of identified usable delay cells: 8
+[04/25 20:28:26     30s] List of identified unusable delay cells:
+[04/25 20:28:26     30s] Total number of identified unusable delay cells: 0
+[04/25 20:28:26     30s] Creating Cell Server, finished. 
+[04/25 20:28:26     30s] 
+[04/25 20:28:26     30s] Deleting Cell Server ...
+[04/25 20:28:26     30s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1625.3M, current mem=1625.3M)
+[04/25 20:28:26     30s] Creating Cell Server ...(0, 0, 0, 0)
+[04/25 20:28:26     30s] Summary for sequential cells identification: 
+[04/25 20:28:26     30s]   Identified SBFF number: 104
+[04/25 20:28:26     30s]   Identified MBFF number: 0
+[04/25 20:28:26     30s]   Identified SB Latch number: 0
+[04/25 20:28:26     30s]   Identified MB Latch number: 0
+[04/25 20:28:26     30s]   Not identified SBFF number: 16
+[04/25 20:28:26     30s]   Not identified MBFF number: 0
+[04/25 20:28:26     30s]   Not identified SB Latch number: 0
+[04/25 20:28:26     30s]   Not identified MB Latch number: 0
+[04/25 20:28:26     30s]   Number of sequential cells which are not FFs: 32
+[04/25 20:28:26     30s]  Visiting view : worst_1v0
+[04/25 20:28:26     30s]    : PowerDomain = none : Weighted F : unweighted  = 40.40 (1.000) with rcCorner = 0
+[04/25 20:28:26     30s]    : PowerDomain = none : Weighted F : unweighted  = 14.70 (1.000) with rcCorner = -1
+[04/25 20:28:26     30s]  Visiting view : best_1v0
+[04/25 20:28:26     30s]    : PowerDomain = none : Weighted F : unweighted  = 11.60 (1.000) with rcCorner = 1
+[04/25 20:28:26     30s]    : PowerDomain = none : Weighted F : unweighted  = 3.60 (1.000) with rcCorner = -1
+[04/25 20:28:26     30s]  Setting StdDelay to 40.40
+[04/25 20:28:26     30s] Creating Cell Server, finished. 
+[04/25 20:28:26     30s] 
+[04/25 20:28:26     31s] 
+[04/25 20:28:26     31s] *** Summary of all messages that are not suppressed in this session:
+[04/25 20:28:26     31s] Severity  ID               Count  Summary                                  
+[04/25 20:28:26     31s] WARNING   IMPLF-201          571  Pin '%s' in macro '%s' has no ANTENNADIF...
+[04/25 20:28:26     31s] ERROR     IMPOAX-820           1  The OpenAccess (OA) features are disable...
+[04/25 20:28:26     31s] ERROR     IMPOAX-850           1  %s command cannot be run as OpenAccess f...
+[04/25 20:28:26     31s] WARNING   TCLCMD-513        1536  The software could not find a matching o...
+[04/25 20:28:26     31s] ERROR     TCLCMD-917        1536  Cannot find '%s' that match '%s'         
+[04/25 20:28:26     31s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/25 20:28:26     31s] ERROR     TCLNL-312          512  %s: Invalid list of pins: '%s'           
+[04/25 20:28:26     31s] WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+[04/25 20:28:26     31s] *** Message Summary: 2128 warning(s), 2050 error(s)
+[04/25 20:28:26     31s] 
+[04/25 20:28:26     31s] <CMD> floorPlan -r 1.0 0.5 10 10 10 10
+[04/25 20:28:27     31s] Horizontal Layer M1 offset = 190 (derived)
+[04/25 20:28:27     31s] Vertical Layer M2 offset = 200 (derived)
+[04/25 20:28:27     31s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[04/25 20:28:27     31s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[04/25 20:28:27     32s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width 1.25 -spacing 1.25 -offset 1.25 -center 1
+[04/25 20:28:27     32s] #% Begin addRing (date=04/25 20:28:27, mem=1628.4M)
+[04/25 20:28:27     32s] 
+[04/25 20:28:28     32s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:01.0, peak mem: 1690.8M)
+[04/25 20:28:28     32s] Ring generation is complete.
+[04/25 20:28:28     32s] vias are now being generated.
+[04/25 20:28:28     32s] addRing created 8 wires.
+[04/25 20:28:28     32s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[04/25 20:28:28     32s] +--------+----------------+----------------+
+[04/25 20:28:28     32s] |  Layer |     Created    |     Deleted    |
+[04/25 20:28:28     32s] +--------+----------------+----------------+
+[04/25 20:28:28     32s] | Metal8 |        4       |       NA       |
+[04/25 20:28:28     32s] |  Via8  |        8       |        0       |
+[04/25 20:28:28     32s] | Metal9 |        4       |       NA       |
+[04/25 20:28:28     32s] +--------+----------------+----------------+
+[04/25 20:28:28     32s] #% End addRing (date=04/25 20:28:28, total cpu=0:00:00.1, real=0:00:01.0, peak res=1631.0M, current mem=1631.0M)
+[04/25 20:28:28     32s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename *
+[04/25 20:28:28     32s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename *
+[04/25 20:28:28     32s] <CMD> setSrouteMode -viaConnectToShape stripe
+[04/25 20:28:28     32s] <CMD> sroute
+[04/25 20:28:28     32s] #% Begin sroute (date=04/25 20:28:28, mem=1634.2M)
+[04/25 20:28:28     32s] *** Begin SPECIAL ROUTE on Sat Apr 25 20:28:28 2026 ***
+[04/25 20:28:28     32s] SPECIAL ROUTE ran on directory: /home/ece558_658_2025/mdnguye0/ece559_proj/pnr
+[04/25 20:28:28     32s] SPECIAL ROUTE ran on machine: vlsicad.ecs.umass.edu (Linux 4.18.0-553.16.1.el8_10.x86_64 Xeon 3.20Ghz)
+[04/25 20:28:28     32s] 
+[04/25 20:28:28     32s] Begin option processing ...
+[04/25 20:28:28     32s] srouteConnectPowerBump set to false
+[04/25 20:28:28     32s] routeSpecial set to true
+[04/25 20:28:28     32s] srouteConnectConverterPin set to false
+[04/25 20:28:28     32s] srouteFollowCorePinEnd set to 3
+[04/25 20:28:28     32s] srouteJogControl set to "preferWithChanges differentLayer"
+[04/25 20:28:28     32s] srouteNoViaOnWireShape set to "padring ring blockring blockpin coverpin noshape blockwire corewire followpin iowire"
+[04/25 20:28:28     32s] sroutePadPinAllPorts set to true
+[04/25 20:28:28     32s] sroutePreserveExistingRoutes set to true
+[04/25 20:28:28     32s] srouteRoutePowerBarPortOnBothDir set to true
+[04/25 20:28:28     32s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2624.00 megs.
+[04/25 20:28:28     32s] 
+[04/25 20:28:28     32s] Reading DB technology information...
+[04/25 20:28:28     32s] Finished reading DB technology information.
+[04/25 20:28:28     32s] Reading floorplan and netlist information...
+[04/25 20:28:28     33s] Finished reading floorplan and netlist information.
+[04/25 20:28:28     33s] **WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+[04/25 20:28:28     33s] Read in 19 layers, 9 routing layers, 1 overlap layer
+[04/25 20:28:28     33s] Read in 2 nondefault rules, 0 used
+[04/25 20:28:28     33s] Read in 487 macros, 53 used
+[04/25 20:28:28     33s] Read in 53 components
+[04/25 20:28:28     33s]   53 core components: 53 unplaced, 0 placed, 0 fixed
+[04/25 20:28:28     33s] Read in 809 logical pins
+[04/25 20:28:28     33s] Read in 809 nets
+[04/25 20:28:28     33s] Read in 2 special nets, 2 routed
+[04/25 20:28:28     33s] Read in 106 terminals
+[04/25 20:28:28     33s] Begin power routing ...
+[04/25 20:28:28     33s] #create default rule from bind_ndr_rule rule=0x7fbf482f6ab0 0x7fbf333c6a98
+[04/25 20:28:29     33s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=0 placement=0 pin_access=1
+[04/25 20:28:29     33s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[04/25 20:28:29     33s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[04/25 20:28:29     33s] Type 'man IMPSR-1256' for more detail.
+[04/25 20:28:29     33s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[04/25 20:28:29     33s] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[04/25 20:28:29     33s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[04/25 20:28:29     33s] Type 'man IMPSR-1256' for more detail.
+[04/25 20:28:29     33s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[04/25 20:28:29     33s] CPU time for FollowPin 0 seconds
+[04/25 20:28:29     33s] CPU time for FollowPin 0 seconds
+[04/25 20:28:29     33s]   Number of IO ports routed: 0
+[04/25 20:28:29     33s]   Number of Block ports routed: 0
+[04/25 20:28:29     33s]   Number of Stripe ports routed: 0
+[04/25 20:28:29     33s]   Number of Core ports routed: 2488
+[04/25 20:28:29     33s]   Number of Pad ports routed: 0
+[04/25 20:28:29     33s]   Number of Power Bump ports routed: 0
+[04/25 20:28:29     33s]   Number of Followpin connections: 1244
+[04/25 20:28:29     33s] End power routing: cpu: 0:00:01, real: 0:00:01, peak: 2640.00 megs.
+[04/25 20:28:29     33s] 
+[04/25 20:28:29     33s] 
+[04/25 20:28:29     33s] 
+[04/25 20:28:29     33s]  Begin updating DB with routing results ...
+[04/25 20:28:29     33s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[04/25 20:28:29     33s] Pin and blockage extraction finished
+[04/25 20:28:29     33s] 
+[04/25 20:28:29     33s] sroute created 3732 wires.
+[04/25 20:28:29     33s] ViaGen created 17416 vias, deleted 0 via to avoid violation.
+[04/25 20:28:29     33s] +--------+----------------+----------------+
+[04/25 20:28:29     33s] |  Layer |     Created    |     Deleted    |
+[04/25 20:28:29     33s] +--------+----------------+----------------+
+[04/25 20:28:29     33s] | Metal1 |      3732      |       NA       |
+[04/25 20:28:29     33s] |  Via1  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via2  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via3  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via4  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via5  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via6  |      2488      |        0       |
+[04/25 20:28:29     33s] |  Via7  |      2488      |        0       |
+[04/25 20:28:29     33s] +--------+----------------+----------------+
+[04/25 20:28:29     33s] #% End sroute (date=04/25 20:28:29, total cpu=0:00:01.4, real=0:00:01.0, peak res=1692.8M, current mem=1686.1M)
+[04/25 20:28:29     33s] <CMD> setPlaceMode -place_global_place_io_pins true
+[04/25 20:28:29     33s] <CMD> getPlaceMode -place_hierarchical_flow -quiet
+[04/25 20:28:29     33s] <CMD> report_message -start_cmd
+[04/25 20:28:29     33s] <CMD> getRouteMode -maxRouteLayer -quiet
+[04/25 20:28:29     33s] <CMD> getRouteMode -user -maxRouteLayer
+[04/25 20:28:29     33s] <CMD> getPlaceMode -user -maxRouteLayer
+[04/25 20:28:29     33s] <CMD> getPlaceMode -quiet -adaptiveFlowMode
+[04/25 20:28:29     33s] <CMD> getPlaceMode -timingDriven -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -adaptive -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -user -relaxSoftBlockageMode
+[04/25 20:28:29     33s] <CMD> getPlaceMode -ignoreScan -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -user -ignoreScan
+[04/25 20:28:29     33s] <CMD> getPlaceMode -repairPlace -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -user -repairPlace
+[04/25 20:28:29     33s] <CMD> getPlaceMode -inPlaceOptMode -quiet
+[04/25 20:28:29     33s] <CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+[04/25 20:28:29     33s] <CMD> getDesignMode -quiet -siPrevention
+[04/25 20:28:30     34s] <CMD> getPlaceMode -exp_slack_driven -quiet
+[04/25 20:28:30     34s] <CMD> um::push_snapshot_stack
+[04/25 20:28:30     34s] <CMD> getDesignMode -quiet -flowEffort
+[04/25 20:28:30     34s] <CMD> getDesignMode -highSpeedCore -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -quiet -adaptive
+[04/25 20:28:30     34s] <CMD> set spgFlowInInitialPlace 1
+[04/25 20:28:30     34s] <CMD> getPlaceMode -sdpAlignment -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -softGuide -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -useSdpGroup -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -sdpAlignment -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -quiet -wireLenOptEffort
+[04/25 20:28:30     34s] <CMD> getPlaceMode -sdpPlace -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -exp_slack_driven -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -sdpPlace -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -groupHighLevelClkGate -quiet
+[04/25 20:28:30     34s] <CMD_INTERNAL> setvar spgRptErrorForScanConnection 0
+[04/25 20:28:30     34s] <CMD> getPlaceMode -place_global_exp_allow_missing_scan_chain -quiet
+[04/25 20:28:30     34s] [check_scan_connected]: number of scan connected with missing definition = 0, number of scan = 0, number of sequential = 158693, percentage of missing scan cell = 0.00% (0 / 158693)
+[04/25 20:28:30     34s] <CMD> getPlaceMode -place_check_library -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -trimView -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -expTrimOptBeforeTDGP -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+[04/25 20:28:30     34s] <CMD> getPlaceMode -congEffort -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -user -relaxSoftBlockageMode
+[04/25 20:28:30     34s] <CMD> getPlaceMode -ignoreScan -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -user -ignoreScan
+[04/25 20:28:30     34s] <CMD> getPlaceMode -repairPlace -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -user -repairPlace
+[04/25 20:28:30     34s] <CMD> getPlaceMode -congEffort -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -timingDriven -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -user -timingDriven
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fastFp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -clusterMode -quiet
+[04/25 20:28:30     34s] <CMD> get_proto_model -type_match {flex_module flex_instgroup} -committed -name -tcl
+[04/25 20:28:30     34s] <CMD> getPlaceMode -inPlaceOptMode -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+[04/25 20:28:30     34s] <CMD> getPlaceMode -ultraCongEffortFlow -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -forceTiming -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fastfp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -timingDriven -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -fastfp -quiet
+[04/25 20:28:30     34s] <CMD> getPlaceMode -powerDriven -quiet
+[04/25 20:28:30     34s] <CMD> getExtractRCMode -quiet -engine
+[04/25 20:28:30     34s] <CMD> getAnalysisMode -quiet -clkSrcPath
+[04/25 20:28:30     34s] <CMD> getAnalysisMode -quiet -clockPropagation
+[04/25 20:28:30     34s] <CMD> getAnalysisMode -quiet -cppr
+[04/25 20:28:30     34s] <CMD> setExtractRCMode -engine preRoute
+[04/25 20:28:30     34s] <CMD> setAnalysisMode -clkSrcPath false -clockPropagation forcedIdeal
+[04/25 20:28:30     35s] <CMD> getPlaceMode -exp_slack_driven -quiet
+[04/25 20:28:30     35s] <CMD_INTERNAL> isAnalysisModeSetup
+[04/25 20:28:30     35s] <CMD> getPlaceMode -quiet -place_global_exp_solve_unbalance_path
+[04/25 20:28:30     35s] <CMD> getPlaceMode -quiet -NMPsuppressInfo
+[04/25 20:28:30     35s] <CMD> getPlaceMode -quiet -place_global_exp_wns_focus_v2
+[04/25 20:28:30     35s] <CMD> getPlaceMode -enableDistPlace -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -quiet -clusterMode
+[04/25 20:28:30     35s] <CMD> getPlaceMode -wl_budget_mode -quiet
+[04/25 20:28:30     35s] <CMD> setPlaceMode -reset -place_global_exp_balance_buffer_chain
+[04/25 20:28:30     35s] <CMD> getPlaceMode -wl_budget_mode -quiet
+[04/25 20:28:30     35s] <CMD> setPlaceMode -reset -place_global_exp_balance_pipeline
+[04/25 20:28:30     35s] <CMD> getPlaceMode -place_global_exp_balance_buffer_chain -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -place_global_exp_balance_pipeline -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -tdgpMemFlow -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -user -resetCombineRFLevel
+[04/25 20:28:30     35s] <CMD> getPlaceMode -quiet -resetCombineRFLevel
+[04/25 20:28:30     35s] <CMD> setPlaceMode -resetCombineRFLevel 1000
+[04/25 20:28:30     35s] <CMD_INTERNAL> setvar spgSpeedupBuildVSM 1
+[04/25 20:28:30     35s] <CMD> getPlaceMode -tdgpResetCteTG -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -macroPlaceMode -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -enableDistPlace -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -exp_slack_driven -quiet
+[04/25 20:28:30     35s] <CMD> getPlaceMode -place_global_ignore_spare -quiet
+[04/25 20:28:31     35s] <CMD> getPlaceMode -enableDistPlace -quiet
+[04/25 20:28:31     35s] <CMD> getPlaceMode -quiet -expNewFastMode
+[04/25 20:28:31     35s] <CMD> setPlaceMode -expHiddenFastMode 1
+[04/25 20:28:31     35s] <CMD> setPlaceMode -reset -ignoreScan
+[04/25 20:28:31     35s] <CMD> getPlaceMode -quiet -place_global_exp_auto_finish_floorplan
+[04/25 20:28:31     35s] <CMD_INTERNAL> colorizeGeometry
+[04/25 20:28:31     35s] 
+[04/25 20:28:31     35s] pdi colorize_geometry "" ""
+[04/25 20:28:31     35s] 
+[04/25 20:28:31     35s] ### Time Record (colorize_geometry) is installed.
+[04/25 20:28:31     35s] #Start colorize_geometry on Sat Apr 25 20:28:31 2026
+[04/25 20:28:31     35s] #
+[04/25 20:28:31     35s] ### Time Record (Pre Callback) is installed.
+[04/25 20:28:31     35s] ### Time Record (Pre Callback) is uninstalled.
+[04/25 20:28:31     35s] ### Time Record (DB Import) is installed.
+[04/25 20:28:31     35s] #WARNING (NRDB-976) The TRACK STEP 0.1900 for preferred direction tracks is smaller than the PITCH 0.2000 for LAYER Metal3. This will cause routability problems for NanoRoute.
+[04/25 20:28:31     35s] #WARNING (NRDB-976) The TRACK STEP 0.1900 for preferred direction tracks is smaller than the PITCH 0.2000 for LAYER Metal5. This will cause routability problems for NanoRoute.
+[04/25 20:28:31     35s] ### import design signature (2): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=1602250145 placement=984943660 pin_access=1
+[04/25 20:28:31     35s] ### Time Record (DB Import) is uninstalled.
+[04/25 20:28:31     35s] ### Time Record (DB Export) is installed.
+[04/25 20:28:31     35s] Extracting standard cell pins and blockage ...... 
+[04/25 20:28:31     35s] Pin and blockage extraction finished
+[04/25 20:28:31     35s] ### export design design signature (3): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=1602250145 placement=984943660 pin_access=1
+[04/25 20:28:31     36s] ### Time Record (DB Export) is uninstalled.
+[04/25 20:28:31     36s] ### Time Record (Post Callback) is installed.
+[04/25 20:28:31     36s] ### Time Record (Post Callback) is uninstalled.
+[04/25 20:28:31     36s] #
+[04/25 20:28:31     36s] #colorize_geometry statistics:
+[04/25 20:28:31     36s] #Cpu time = 00:00:00
+[04/25 20:28:31     36s] #Elapsed time = 00:00:00
+[04/25 20:28:31     36s] #Increased memory = -5.78 (MB)
+[04/25 20:28:31     36s] #Total memory = 1785.02 (MB)
+[04/25 20:28:31     36s] #Peak memory = 1790.82 (MB)
+[04/25 20:28:31     36s] #Number of warnings = 2
+[04/25 20:28:31     36s] #Total number of warnings = 2
+[04/25 20:28:31     36s] #Number of fails = 0
+[04/25 20:28:31     36s] #Total number of fails = 0
+[04/25 20:28:31     36s] #Complete colorize_geometry on Sat Apr 25 20:28:31 2026
+[04/25 20:28:31     36s] #
+[04/25 20:28:31     36s] ### import design signature (4): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0, del_dirty_area=0 cell=0 placement=0 pin_access=1
+[04/25 20:28:31     36s] ### Time Record (colorize_geometry) is uninstalled.
+[04/25 20:28:31     36s] ### 
+[04/25 20:28:31     36s] ###   Scalability Statistics
+[04/25 20:28:31     36s] ### 
+[04/25 20:28:31     36s] ### ------------------------+----------------+----------------+----------------+
+[04/25 20:28:31     36s] ###   colorize_geometry     |        cpu time|    elapsed time|     scalability|
+[04/25 20:28:31     36s] ### ------------------------+----------------+----------------+----------------+
+[04/25 20:28:31     36s] ###   Pre Callback          |        00:00:00|        00:00:00|             1.0|
+[04/25 20:28:31     36s] ###   Post Callback         |        00:00:00|        00:00:00|             1.0|
+[04/25 20:28:31     36s] ###   DB Import             |        00:00:00|        00:00:00|             1.0|
+[04/25 20:28:31     36s] ###   DB Export             |        00:00:00|        00:00:00|             1.0|
+[04/25 20:28:31     36s] ###   Entire Command        |        00:00:00|        00:00:00|             1.0|
+[04/25 20:28:31     36s] ### ------------------------+----------------+----------------+----------------+
+[04/25 20:28:31     36s] ### 
+[04/25 20:28:31     36s] <CMD> getPlaceMode -quiet -IOSlackAdjust
+[04/25 20:28:31     36s] *** Starting placeDesign default flow ***
+[04/25 20:28:31     36s] <CMD> getPlaceMode -tdgpCteZeroDelayModeDelBuf -quiet
+[04/25 20:28:31     36s] <CMD> set_global timing_enable_zero_delay_analysis_mode true
+[04/25 20:28:32     36s] <CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+[04/25 20:28:32     36s] <CMD> getPlaceMode -quiet -prePlaceOptSimplifyNetlist
+[04/25 20:28:32     36s] <CMD> getPlaceMode -quiet -enablePrePlaceOptimizations
+[04/25 20:28:32     36s] <CMD> getPlaceMode -quiet -prePlaceOptDecloneInv
+[04/25 20:28:32     36s] <CMD> deleteBufferTree -decloneInv
+[04/25 20:28:32     36s] **Info: Trial Route has Max Route Layer 15/9.
+[04/25 20:28:32     36s] ### Creating LA Mngr. totSessionCpu=0:00:36.4 mem=1819.1M
+[04/25 20:28:32     36s] ### Creating LA Mngr, finished. totSessionCpu=0:00:36.5 mem=1819.1M
+[04/25 20:28:32     36s] *** Start deleteBufferTree ***
+[04/25 20:28:50     55s] Info: Detect buffers to remove automatically.
+[04/25 20:28:50     55s] Analyzing netlist ...
+[04/25 20:28:58     62s] Updating netlist
+[04/25 20:28:58     63s] AAE DB initialization (MEM=2241.19 CPU=0:00:00.4 REAL=0:00:00.0) 
+[04/25 20:28:59     63s] Start AAE Lib Loading. (MEM=2241.19)
+[04/25 20:28:59     63s] End AAE Lib Loading. (MEM=2260.27 CPU=0:00:00.0 Real=0:00:00.0)
+[04/25 20:29:00     64s] 
+[04/25 20:29:06     70s] *summary: 24164 instances (buffers/inverters) removed
+[04/25 20:29:06     70s] *** Finish deleteBufferTree (0:00:34.4) ***
+[04/25 20:29:06     70s] Deleting Cell Server ...
+[04/25 20:29:06     70s] <CMD> getPlaceMode -tdgpCteZeroDelayModeDelBuf -quiet
+[04/25 20:29:06     70s] <CMD> set_global timing_enable_zero_delay_analysis_mode false
+[04/25 20:29:07     71s] <CMD> getAnalysisMode -quiet -honorClockDomains
+[04/25 20:29:07     71s] <CMD> getPlaceMode -honorUserPathGroup -quiet
+[04/25 20:29:07     71s] <CMD> getAnalysisMode -quiet -honorClockDomains
+[04/25 20:29:07     71s] **INFO: Enable pre-place timing setting for timing analysis
+[04/25 20:29:07     71s] Set Using Default Delay Limit as 101.
+[04/25 20:29:07     71s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[04/25 20:29:07     71s] <CMD> set delaycal_use_default_delay_limit 101
+[04/25 20:29:07     71s] Set Default Net Delay as 0 ps.
+[04/25 20:29:07     71s] <CMD> set delaycal_default_net_delay 0
+[04/25 20:29:07     71s] Set Default Net Load as 0 pF. 
+[04/25 20:29:07     71s] <CMD> set delaycal_default_net_load 0
+[04/25 20:29:07     71s] <CMD> set delaycal_default_net_load_ignore_for_ilm 0
+[04/25 20:29:07     71s] <CMD> getAnalysisMode -clkSrcPath -quiet
+[04/25 20:29:07     71s] <CMD> getAnalysisMode -clockPropagation -quiet
+[04/25 20:29:07     71s] <CMD> getAnalysisMode -checkType -quiet
+[04/25 20:29:07     71s] <CMD> buildTimingGraph
+[04/25 20:29:07     71s] <CMD> getDelayCalMode -ignoreNetLoad -quiet
+[04/25 20:29:07     71s] <CMD> getDelayCalMode -ignoreNetLoad -quiet
+[04/25 20:29:07     71s] <CMD> setDelayCalMode -ignoreNetLoad true -quiet
+[04/25 20:29:07     72s] **INFO: Analyzing IO path groups for slack adjustment
+[04/25 20:29:07     72s] <CMD> get_global timing_enable_path_group_priority
+[04/25 20:29:07     72s] <CMD> get_global timing_constraint_enable_group_path_resetting
+[04/25 20:29:07     72s] <CMD> set_global timing_enable_path_group_priority false
+[04/25 20:29:07     72s] <CMD> set_global timing_constraint_enable_group_path_resetting false
+[04/25 20:29:08     72s] <CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+[04/25 20:29:08     72s] <CMD> set_global _is_ipo_interactive_path_groups 1
+[04/25 20:29:08     72s] <CMD> group_path -name in2reg_tmp.2576344 -from {0x12e 0x131} -to 0x132 -ignore_source_of_trigger_arc
+[04/25 20:29:08     72s] <CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+[04/25 20:29:08     73s] <CMD> set_global _is_ipo_interactive_path_groups 1
+[04/25 20:29:08     73s] <CMD> group_path -name in2out_tmp.2576344 -from {0x135 0x138} -to 0x139 -ignore_source_of_trigger_arc
+[04/25 20:29:09     73s] <CMD> set_global _is_ipo_interactive_path_groups 1
+[04/25 20:29:09     73s] <CMD> group_path -name reg2reg_tmp.2576344 -from 0x13b -to 0x13c
+[04/25 20:29:09     73s] <CMD> set_global _is_ipo_interactive_path_groups 1
+[04/25 20:29:09     73s] <CMD> group_path -name reg2out_tmp.2576344 -from 0x13f -to 0x140
+[04/25 20:29:26     90s] <CMD> setPathGroupOptions reg2reg_tmp.2576344 -effortLevel high
+[04/25 20:29:26     90s] Effort level <high> specified for reg2reg_tmp.2576344 path_group
+[04/25 20:29:26     91s] #################################################################################
+[04/25 20:29:26     91s] # Design Stage: PreRoute
+[04/25 20:29:26     91s] # Design Name: tpu_top
+[04/25 20:29:26     91s] # Design Mode: 45nm
+[04/25 20:29:26     91s] # Analysis Mode: MMMC Non-OCV 
+[04/25 20:29:26     91s] # Parasitics Mode: No SPEF/RCDB
+[04/25 20:29:26     91s] # Signoff Settings: SI Off 
+[04/25 20:29:26     91s] #################################################################################
+[04/25 20:29:29     93s] Calculate delays in BcWc mode...
+[04/25 20:29:30     95s] Topological Sorting (REAL = 0:00:01.0, MEM = 2373.0M, InitMEM = 2351.3M)
+[04/25 20:29:30     95s] Start delay calculation (fullDC) (1 T). (MEM=2372.96)
+[04/25 20:29:34     98s] End AAE Lib Interpolated Model. (MEM=2415.27 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[04/25 20:29:34     99s] First Iteration Infinite Tw... 
+[04/25 20:30:46    170s] Total number of fetched objects 657934
+[04/25 20:30:48    173s] End Timing Check Calculation. (CPU Time=0:00:02.7, Real Time=0:00:02.0)
+[04/25 20:30:48    173s] End delay calculation. (MEM=3179.7 CPU=0:01:07 REAL=0:01:06)
+[04/25 20:30:48    173s] End delay calculation (fullDC). (MEM=3179.7 CPU=0:01:18 REAL=0:01:18)
+[04/25 20:30:49    173s] *** CDM Built up (cpu=0:01:22  real=0:01:23  mem= 3179.7M) ***
+[04/25 20:31:05    190s] <CMD> reset_path_group -name reg2out_tmp.2576344
+[04/25 20:31:05    190s] <CMD> set_global _is_ipo_interactive_path_groups 0
+[04/25 20:31:05    190s] <CMD> reset_path_group -name in2out_tmp.2576344
+[04/25 20:31:05    190s] <CMD> set_global _is_ipo_interactive_path_groups 0
+[04/25 20:31:25    210s] **INFO: Disable pre-place timing setting for timing analysis
+[04/25 20:31:25    210s] <CMD> setDelayCalMode -ignoreNetLoad false
+[04/25 20:31:28    212s] Set Using Default Delay Limit as 1000.
+[04/25 20:31:28    212s] <CMD> set delaycal_use_default_delay_limit 1000
+[04/25 20:31:28    212s] Set Default Net Delay as 1000 ps.
+[04/25 20:31:28    212s] <CMD> set delaycal_default_net_delay 1000ps
+[04/25 20:31:28    212s] Set Default Net Load as 0.5 pF. 
+[04/25 20:31:28    212s] <CMD> set delaycal_default_net_load 0.5pf
+[04/25 20:31:28    212s] <CMD> set delaycal_default_net_load_ignore_for_ilm 0
+[04/25 20:31:28    212s] <CMD> all_setup_analysis_views
+[04/25 20:31:28    212s] <CMD> getPlaceMode -place_global_exp_ignore_low_effort_path_groups -quiet
+[04/25 20:31:28    212s] <CMD> getPlaceMode -exp_slack_driven -quiet
+[04/25 20:31:28    212s] <CMD> getAnalysisMode -quiet -honorClockDomains
+[04/25 20:31:28    212s] **INFO: Pre-place timing setting for timing analysis already disabled
+[04/25 20:31:28    212s] <CMD> getPlaceMode -ignoreUnproperPowerInit -quiet
+[04/25 20:31:28    212s] <CMD> getPlaceMode -quiet -expSkipGP
+[04/25 20:31:28    212s] OPERPROF: Starting PlacementDelFiller
+ at level 1, MEM:3131.4M
+[04/25 20:31:28    212s] Deleted 0 physical inst  (cell - / prefix -).
+[04/25 20:31:28    212s] OPERPROF: Finished PlacementDelFiller
+ at level 1, CPU:0.020, REAL:0.020, MEM:3131.4M
+[04/25 20:31:28    212s] INFO: #ExclusiveGroups=0
+[04/25 20:31:28    212s] INFO: There are no Exclusive Groups.
+[04/25 20:31:28    212s] *** Starting "NanoPlace(TM) placement v#2 (mem=3131.4M)" ...
+[04/25 20:31:28    212s] <CMD> setDelayCalMode -engine feDc
+[04/25 20:31:28    212s] Wait...
+[04/25 20:31:29    214s] *** Build Buffered Sizing Timing Model
+[04/25 20:31:29    214s] (cpu=0:00:01.5 mem=3139.4M) ***
+[04/25 20:31:29    214s] *** Build Virtual Sizing Timing Model
+[04/25 20:31:29    214s] (cpu=0:00:01.6 mem=3139.4M) ***
+[04/25 20:31:29    214s] No user-set net weight.
+[04/25 20:31:29    214s] Net fanout histogram:
+[04/25 20:31:29    214s] 2		: 450051 (68.5%) nets
+[04/25 20:31:29    214s] 3		: 183738 (27.9%) nets
+[04/25 20:31:29    214s] 4     -	14	: 11689 (1.8%) nets
+[04/25 20:31:29    214s] 15    -	39	: 9874 (1.5%) nets
+[04/25 20:31:29    214s] 40    -	79	: 334 (0.1%) nets
+[04/25 20:31:29    214s] 80    -	159	: 41 (0.0%) nets
+[04/25 20:31:29    214s] 160   -	319	: 1649 (0.3%) nets
+[04/25 20:31:29    214s] 320   -	639	: 17 (0.0%) nets
+[04/25 20:31:29    214s] 640   -	1279	: 5 (0.0%) nets
+[04/25 20:31:29    214s] 1280  -	2559	: 5 (0.0%) nets
+[04/25 20:31:29    214s] 2560  -	5119	: 12 (0.0%) nets
+[04/25 20:31:29    214s] 5120+		: 4 (0.0%) nets
+[04/25 20:31:29    214s] no activity file in design. spp won't run.
+[04/25 20:31:29    214s] Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+[04/25 20:31:30    214s] Scan chains were not defined.
+[04/25 20:31:30    214s] #spOpts: N=45 
+[04/25 20:31:30    215s] # Building tpu_top llgBox search-tree.
+[04/25 20:31:31    215s] #std cell=617314 (0 fixed + 617314 movable) #buf cell=0 #inv cell=85684 #block=0 (0 floating + 0 preplaced)
+[04/25 20:31:31    215s] #ioInst=0 #net=657419 #term=2457270 #term/net=3.74, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=809
+[04/25 20:31:31    215s] stdCell: 617314 single + 0 double + 0 multi
+[04/25 20:31:31    215s] Total standard cell length = 1301.1825 (mm), area = 2.2250 (mm^2)
+[04/25 20:31:31    215s] OPERPROF: Starting spInitSiteArr at level 1, MEM:3139.4M
+[04/25 20:31:31    215s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:3139.4M
+[04/25 20:31:31    215s] Core basic site is CoreSite
+[04/25 20:31:31    215s] **Info: (IMPSP-307): Design contains fractional 17 cells.
+[04/25 20:31:31    215s] Use non-trimmed site array because memory saving is not enough.
+[04/25 20:31:31    215s] SiteArray: non-trimmed site array dimensions = 1243 x 10642
+[04/25 20:31:31    215s] SiteArray: use 53,460,992 bytes
+[04/25 20:31:31    215s] SiteArray: current memory after site array memory allocation 3222.4M
+[04/25 20:31:31    215s] SiteArray: FP blocked sites are writable
+[04/25 20:31:31    216s] Estimated cell power/ground rail width = 0.160 um
+[04/25 20:31:31    216s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[04/25 20:31:31    216s] OPERPROF:     Starting RoutingBlockageFromWireViaStBox at level 3, MEM:3222.4M
+[04/25 20:31:31    216s] OPERPROF:     Finished RoutingBlockageFromWireViaStBox at level 3, CPU:0.001, REAL:0.001, MEM:3222.4M
+[04/25 20:31:31    216s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.342, REAL:0.324, MEM:3222.4M
+[04/25 20:31:33    217s] OPERPROF: Finished spInitSiteArr at level 1, CPU:2.044, REAL:2.029, MEM:3222.4M
+[04/25 20:31:33    217s] OPERPROF: Starting pre-place ADS at level 1, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:   Starting pre-place ADS Build Supply Map at level 2, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:     Starting ADS RRMInitG at level 3, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:     Finished ADS RRMInitG at level 3, CPU:0.000, REAL:0.000, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:     Starting ADS RRMCPTSL at level 3, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:       Starting ADS RRMBLKB at level 4, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:       Finished ADS RRMBLKB at level 4, CPU:0.025, REAL:0.025, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:       Starting ADS RRMCPTTR at level 4, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:       Finished ADS RRMCPTTR at level 4, CPU:0.001, REAL:0.001, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:     Finished ADS RRMCPTSL at level 3, CPU:0.026, REAL:0.026, MEM:3222.4M
+[04/25 20:31:33    218s] OPERPROF:   Finished pre-place ADS Build Supply Map at level 2, CPU:0.033, REAL:0.033, MEM:3222.4M
+[04/25 20:31:34    218s] ADSU 0.492 -> 0.492. GS 13.680
+[04/25 20:31:34    218s] OPERPROF: Finished pre-place ADS at level 1, CPU:1.251, REAL:1.254, MEM:3222.4M
+[04/25 20:31:34    219s] Average module density = 0.492.
+[04/25 20:31:34    219s] Density for the design = 0.492.
+[04/25 20:31:34    219s]        = stdcell_area 6505913 sites (2225022 um^2) / alloc_area 13228006 sites (4523978 um^2).
+[04/25 20:31:34    219s] Pin Density = 0.1858.
+[04/25 20:31:34    219s]             = total # of pins 2457270 / total area 13228006.
+[04/25 20:31:34    219s] OPERPROF: Starting spMPad at level 1, MEM:3222.4M
+[04/25 20:31:34    219s] OPERPROF:   Starting spContextMPad at level 2, MEM:3222.4M
+[04/25 20:31:34    219s] OPERPROF:   Finished spContextMPad at level 2, CPU:0.000, REAL:0.000, MEM:3222.4M
+[04/25 20:31:34    219s] OPERPROF: Finished spMPad at level 1, CPU:0.046, REAL:0.046, MEM:3222.4M
+[04/25 20:31:35    220s] Initial padding reaches pin density 0.474 for top
+[04/25 20:31:35    220s] InitPadU 0.492 -> 0.623 for top
+[04/25 20:31:36    220s] Identified 255 spare or floating instances, with no clusters.
+[04/25 20:31:36    220s] OPERPROF: Starting spSectionHeadInit at level 1, MEM:3222.4M
+[04/25 20:31:36    221s] OPERPROF: Finished spSectionHeadInit at level 1, CPU:0.241, REAL:0.241, MEM:3222.4M
+[04/25 20:31:36    221s] === lastAutoLevel = 12 
+[04/25 20:31:36    221s] OPERPROF: Starting spInitNetWt at level 1, MEM:3222.4M
+[04/25 20:31:37    222s] 0 delay mode for cte enabled initNetWt.
+[04/25 20:31:37    222s] no activity file in design. spp won't run.
+[04/25 20:31:37    222s] [spp] 0
+[04/25 20:31:37    222s] [adp] 0:1:1:3
+[04/25 20:32:11    255s] 0 delay mode for cte disabled initNetWt.
+[04/25 20:32:11    255s] OPERPROF: Finished spInitNetWt at level 1, CPU:34.647, REAL:34.673, MEM:3220.4M
+[04/25 20:32:11    255s] Clock gating cells determined by native netlist tracing.
+[04/25 20:32:11    255s] no activity file in design. spp won't run.
+[04/25 20:32:11    255s] no activity file in design. spp won't run.
+[04/25 20:32:11    256s] OPERPROF: Starting npMain at level 1, MEM:3220.4M
+[04/25 20:32:14    258s] OPERPROF:   Starting npPlace at level 2, MEM:3367.1M
+[04/25 20:32:17    261s] Iteration  1: Total net bbox = 3.283e-05 (1.79e-05 1.49e-05)
+[04/25 20:32:17    261s]               Est.  stn bbox = 3.475e-05 (1.89e-05 1.58e-05)
+[04/25 20:32:17    261s]               cpu = 0:00:03.0 real = 0:00:03.0 mem = 3887.8M
+[04/25 20:32:18    261s] Iteration  2: Total net bbox = 3.283e-05 (1.79e-05 1.49e-05)
+[04/25 20:32:18    261s]               Est.  stn bbox = 3.475e-05 (1.89e-05 1.58e-05)
+[04/25 20:32:18    261s]               cpu = 0:00:00.3 real = 0:00:01.0 mem = 3897.2M
+[04/25 20:32:19    263s] exp_mt_sequential is set from setPlaceMode option to 1
+[04/25 20:32:19    263s] Setting dotProdMode from setPlaceMode option to Multi-thread sequential mode (nrThread=1)
+[04/25 20:32:19    263s] place_exp_mt_interval set to default 32
+[04/25 20:32:19    263s] place_exp_mt_interval_bias (first half) set to default 0.750000
+[04/25 20:32:49    293s] Iteration  3: Total net bbox = 2.359e+04 (1.19e+04 1.16e+04)
+[04/25 20:32:50    293s]               Est.  stn bbox = 3.129e+04 (1.59e+04 1.54e+04)
+[04/25 20:32:50    293s]               cpu = 0:00:31.8 real = 0:00:32.0 mem = 4893.7M
+[04/25 20:32:50    293s] Total number of setup views is 1.
+[04/25 20:32:50    293s] Total number of active setup views is 1.
+[04/25 20:32:50    293s] Active setup views:
+[04/25 20:32:50    293s]     worst_1v0
+[04/25 20:36:15    498s] Iteration  4: Total net bbox = 1.170e+07 (1.06e+07 1.08e+06)
+[04/25 20:36:15    498s]               Est.  stn bbox = 1.797e+07 (1.65e+07 1.46e+06)
+[04/25 20:36:15    498s]               cpu = 0:03:26 real = 0:03:25 mem = 4893.3M
+[04/25 20:40:51    773s] Iteration  5: Total net bbox = 1.332e+07 (6.39e+06 6.93e+06)
+[04/25 20:40:51    773s]               Est.  stn bbox = 2.121e+07 (1.06e+07 1.06e+07)
+[04/25 20:40:51    773s]               cpu = 0:04:35 real = 0:04:36 mem = 4893.9M
+[04/25 20:40:51    773s] OPERPROF:   Finished npPlace at level 2, CPU:515.469, REAL:516.477, MEM:4893.9M
+[04/25 20:40:52    774s] OPERPROF: Finished npMain at level 1, CPU:518.503, REAL:520.518, MEM:4893.9M
+[04/25 20:40:52    775s] OPERPROF: Starting npMain at level 1, MEM:4893.9M
+[04/25 20:40:57    780s] OPERPROF:   Starting npPlace at level 2, MEM:4890.9M
+[04/25 20:47:16   1158s] Iteration  6: Total net bbox = 1.326e+07 (6.70e+06 6.56e+06)
+[04/25 20:47:16   1158s]               Est.  stn bbox = 2.214e+07 (1.16e+07 1.05e+07)
+[04/25 20:47:16   1158s]               cpu = 0:06:16 real = 0:06:17 mem = 5142.8M
+[04/25 20:47:16   1158s] OPERPROF:   Finished npPlace at level 2, CPU:378.514, REAL:379.228, MEM:5124.8M
+[04/25 20:47:17   1159s] OPERPROF: Finished npMain at level 1, CPU:384.181, REAL:384.907, MEM:5124.8M
+[04/25 20:47:18   1160s] Iteration  7: Total net bbox = 1.393e+07 (7.08e+06 6.86e+06)
+[04/25 20:47:18   1160s]               Est.  stn bbox = 2.298e+07 (1.20e+07 1.10e+07)
+[04/25 20:47:18   1160s]               cpu = 0:00:00.6 real = 0:00:01.0 mem = 5124.8M
+[04/25 20:48:55   1257s] nrCritNet: 5.00% ( 32867 / 657419 ) cutoffSlk: -5453.9ps stdDelay: 40.4ps
+[04/25 20:50:22   1344s] nrCritNet: 2.00% ( 13146 / 657419 ) cutoffSlk: -5616.6ps stdDelay: 40.4ps
+[04/25 20:50:23   1345s] Iteration  8: Total net bbox = 1.393e+07 (7.07e+06 6.86e+06)
+[04/25 20:50:23   1345s]               Est.  stn bbox = 2.298e+07 (1.20e+07 1.10e+07)
+[04/25 20:50:23   1345s]               cpu = 0:03:05 real = 0:03:05 mem = 5167.1M
+[04/25 20:50:23   1345s] OPERPROF: Starting npMain at level 1, MEM:5167.1M
+[04/25 20:50:28   1350s] OPERPROF:   Starting npPlace at level 2, MEM:5162.1M
+[04/25 20:55:21   1642s] OPERPROF:   Finished npPlace at level 2, CPU:291.857, REAL:292.396, MEM:5228.1M
+[04/25 20:55:22   1643s] OPERPROF: Finished npMain at level 1, CPU:297.713, REAL:298.264, MEM:5225.1M
+[04/25 20:55:22   1643s] OPERPROF: Starting npCallHUMEst at level 1, MEM:5225.1M
+[04/25 20:55:22   1643s] Starting Early Global Route rough congestion estimation: mem = 5225.1M
+[04/25 21:10:06   1644s] **INFO (INTERRUPT): The current script will stop before next command.
+[04/25 21:10:06   1644s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[04/25 21:11:21   1644s] **INFO (INTERRUPT): The current script will stop before next command.
+[04/25 21:11:21   1644s] **INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+[04/25 21:11:22   1644s] Innovus terminated by user interrupt.
+[04/25 21:11:22   1644s] 
+[04/25 21:11:22   1644s] *** Memory Usage v#1 (Current mem = 3192.070M, initial mem = 273.977M) ***
+[04/25 21:11:22   1644s] 
+[04/25 21:11:22   1644s] *** Summary of all messages that are not suppressed in this session:
+[04/25 21:11:22   1644s] Severity  ID               Count  Summary                                  
+[04/25 21:11:22   1644s] WARNING   IMPLF-201          571  Pin '%s' in macro '%s' has no ANTENNADIF...
+[04/25 21:11:22   1644s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[04/25 21:11:22   1644s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[04/25 21:11:22   1644s] WARNING   IMPSR-4302           1  Cap-table/qrcTechFile is found in the de...
+[04/25 21:11:22   1644s] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[04/25 21:11:22   1644s] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[04/25 21:11:22   1644s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[04/25 21:11:22   1644s] ERROR     IMPOAX-142           3  %s                                       
+[04/25 21:11:22   1644s] ERROR     IMPOAX-820           1  The OpenAccess (OA) features are disable...
+[04/25 21:11:22   1644s] ERROR     IMPOAX-850           1  %s command cannot be run as OpenAccess f...
+[04/25 21:11:22   1644s] WARNING   TCLCMD-513        1536  The software could not find a matching o...
+[04/25 21:11:22   1644s] ERROR     TCLCMD-917        1536  Cannot find '%s' that match '%s'         
+[04/25 21:11:22   1644s] WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+[04/25 21:11:22   1644s] ERROR     TCLNL-312          512  %s: Invalid list of pins: '%s'           
+[04/25 21:11:22   1644s] WARNING   TECHLIB-302         20  No function defined for cell '%s'. The c...
+[04/25 21:11:22   1644s] *** Message Summary: 2136 warning(s), 2053 error(s)
+[04/25 21:11:22   1644s] 
+[04/25 21:11:22   1644s] --- Ending "Innovus" (totcpu=0:27:24, real=0:44:02, mem=3192.1M) ---

@@ -1,0 +1,2 @@
+#e1(17Apr2026:00:17:23): source ./xcelium.d/env.d/env.history.17Apr2026_00_17_23
+s1(17Apr2026:00:17:23):  xrun -uvm -compile tpu_if.sv 

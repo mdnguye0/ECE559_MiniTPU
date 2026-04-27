@@ -1,0 +1,4 @@
+#e1(23Apr2026:01:07:56): source ./xcelium.d/env.d/env.history.23Apr2026_01_07_56
+s1(23Apr2026:01:07:56):  xrun -clean -uvm -compile ../../seq_items/out_item.sv out_monitor.sv out_agent.sv 
+#e2(23Apr2026:01:08:18): source ./xcelium.d/env.d/env.history.23Apr2026_01_08_18
+s2(23Apr2026:01:08:18):  xrun -clean -uvm -compile ../../seq_items/out_item.sv out_monitor.sv out_agent.sv 

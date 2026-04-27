@@ -1,0 +1,35 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p004_1, built Thu May 7 20:02:41 PDT 2020
+Options:	
+Date:		Sun Apr 26 13:56:03 2026
+Host:		vlsicad.ecs.umass.edu (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz 22528KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /opt/cadence/innovus20/tools.lnx86/lib/64bit/libstdc++.so.6: version `GLIBCXX_3.4.31' not found (required by /opt/cadence/ic251_hotfix/install/oa_v22.62.011/lib/linux_rhel80_64/opt/liboaDesign.so)
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /opt/cadence/innovus20/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (514 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading Pegasus 24.13 fill procedures
+<CMD> win
+couldn't read file "run_pnr.tcl": no such file or directory
+
+*** Memory Usage v#1 (Current mem = 679.195M, initial mem = 281.977M) ***
+*** Message Summary: 1 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:14.3, real=0:01:23, mem=679.2M) ---

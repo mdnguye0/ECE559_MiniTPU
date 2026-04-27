@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-uvm
+-compile
+../../seq_items/out_item.sv
+out_monitor.sv
+out_agent.sv

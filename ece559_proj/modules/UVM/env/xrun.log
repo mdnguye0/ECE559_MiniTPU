@@ -1,0 +1,11 @@
+xrun(64): 25.09-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.09-s001: Started on Apr 20, 2026 at 12:56:42 EDT
+xrun
+	-clean
+	-uvm
+	-compile
+	../seq_items/weight_item.sv
+	weight_sequence.sv
+xrun: *SE,FILEMIS: Cannot find the provided file ../seq_items/weight_item.sv.
+xrun: *SE,FILEMIS: Cannot find the provided file weight_sequence.sv.
+TOOL:	xrun(64)	25.09-s001: Exiting on Apr 20, 2026 at 12:56:43 EDT  (total: 00:00:01)

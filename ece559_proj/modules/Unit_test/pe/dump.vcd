@@ -1,0 +1,194 @@
+$date
+	Sat Feb 21 13:22:40 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module pe_tb $end
+$var wire 32 ! psum_out [31:0] $end
+$var wire 16 " act_out [15:0] $end
+$var reg 16 # act_in [15:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % en $end
+$var reg 1 & load_weight $end
+$var reg 32 ' psum_in [31:0] $end
+$var reg 1 ( rst_n $end
+$var reg 16 ) weight_in [15:0] $end
+$scope module dut $end
+$var wire 16 * act_in [15:0] $end
+$var wire 16 + act_out [15:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % en $end
+$var wire 1 & load_weight $end
+$var wire 32 , psum_in [31:0] $end
+$var wire 32 - psum_out [31:0] $end
+$var wire 1 ( rst_n $end
+$var wire 16 . weight_in [15:0] $end
+$var wire 32 / prod [31:0] $end
+$var parameter 32 0 ACT_WIDTH $end
+$var parameter 32 1 PSUM_WIDTH $end
+$var parameter 32 2 WT_WIDTH $end
+$var reg 16 3 act_reg [15:0] $end
+$var reg 32 4 psum_reg [31:0] $end
+$var reg 16 5 weight_reg [15:0] $end
+$upscope $end
+$scope task check $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 2
+b100000 1
+b10000 0
+$end
+#0
+$dumpvars
+bx 5
+bx 4
+bx 3
+bx /
+b0 .
+bx -
+b0 ,
+bx +
+b0 *
+b0 )
+1(
+b0 '
+0&
+0%
+0$
+b0 #
+bx "
+bx !
+$end
+#5000
+1$
+#10000
+0$
+#15000
+1$
+#20000
+b0 !
+b0 -
+b0 4
+b0 "
+b0 +
+b0 3
+b0 /
+b0 5
+0$
+0(
+#25000
+1$
+#30000
+0$
+#35000
+1$
+#40000
+0$
+b1111111111111011 )
+b1111111111111011 .
+1&
+1(
+#45000
+b1111111111111011 5
+1$
+#50000
+0$
+#55000
+1$
+#60000
+0$
+b11111111111111111111111111111001 '
+b11111111111111111111111111111001 ,
+b11111111111111111111111111000100 /
+b1100 #
+b1100 *
+1%
+0&
+#65000
+b11111111111111111111111110111101 !
+b11111111111111111111111110111101 -
+b11111111111111111111111110111101 4
+b1100 "
+b1100 +
+b1100 3
+1$
+#70000
+0$
+#75000
+1$
+#80000
+0$
+b10000 '
+b10000 ,
+b11111111111111111111111111110001 /
+b11 #
+b11 *
+#85000
+b1 !
+b1 -
+b1 4
+b11 "
+b11 +
+b11 3
+1$
+#90000
+0$
+#95000
+1$
+#100000
+0$
+b1100100 '
+b1100100 ,
+b11111111111111111111111111010011 /
+b1001 #
+b1001 *
+0%
+#105000
+1$
+#110000
+0$
+#115000
+1$
+#120000
+0$
+b1010 '
+b1010 ,
+b11111111111111111111111111011101 /
+b111 #
+b111 *
+b100 )
+b100 .
+1&
+1%
+#125000
+b11100 /
+b100 5
+1$
+#130000
+0$
+#135000
+1$
+#140000
+0$
+0&
+#145000
+b100110 !
+b100110 -
+b100110 4
+b111 "
+b111 +
+b111 3
+1$
+#150000
+0$
+#155000
+1$
+#160000
+0$
